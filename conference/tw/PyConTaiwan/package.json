@@ -1,0 +1,43 @@
+{
+  "name": "PyConTaiwan",
+  "title": "PyCon Taiwan",
+  "description": "PyCon Taiwan is an annual convention in Taiwan for the discussion and promotion of the Python programming language. It is held by enthusiasts and focuses on Python technology and its versatile applications. We welcome people who are interested in Python to join PyCon Taiwan to share knowledge, exchange ideas, make connections and to help us grow our network.",
+  "country": "tw",
+  "homepage": "https://tw.pycon.org/",
+  "keywords": [
+    "open source",
+    "python"
+  ],
+  "contact": "organizers@pycon.tw",
+  "contributors": "PyCon Taiwan organizers",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pycontw"
+  },
+  "registration": {
+    "type": "kktix",
+    "url": "https://pycontw.kktix.cc/"
+  },
+  "chat": [
+    {
+      "type": "slack",
+      "urls": [
+        "https://pycontw.slack.com/"
+      ]
+    }
+  ],
+  "social-medias": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/pycontw"
+      ]
+    },
+    {
+      "type": "twitter",
+      "urls": [
+        "https://twitter.com/PyConTW"
+      ]
+    }
+  ]
+}
