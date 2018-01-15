@@ -1,0 +1,45 @@
+{
+  "name": "community short name",
+  "title": "community name",
+  "description": "About community information",
+  "countrycode": "Follow ISO 3166-1 alpha-2",
+  "city": "city name",
+  "homepage": "homepage link",
+  "contact": "email",
+  "keywords": [
+    "topic of the community",
+    "with some keywords"
+  ],
+  "contributors": "Show the maintainors or organizers of the community",
+  "registration": {
+    "type": "meetup or kktix",
+    "url": "meetup's URL"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/organization"
+  },
+  "chat": [
+    {
+      "type": "slack or telegram ... etc",
+      "urls": [
+        "The link of the chat"
+      ]
+    }
+  ],
+  "social-media": [
+    {
+      "type": "facebook or instagram...etc",
+      "urls": [
+        "https://www.facebook.com/DigitalOceanHsinchu/",
+        "https://www.facebook.com/groups/DigitalOceanHsinchu/"
+      ]
+    },
+    {
+      "type": "twitter",
+      "urls": [
+        "https://twitter.com/name"
+      ]
+    }
+  }
+}
