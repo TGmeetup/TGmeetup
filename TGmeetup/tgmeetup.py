@@ -16,10 +16,22 @@ try:
 except NameError:
     to_unicode = str
 
-# def add_kktix_event(kktix_orgs):
-    # for org in kktix_groups:
-    #kktix_api = KKTIXAPI(org)
-    # pass
+
+def add_kktix_event(kktix_orgs):
+    kktix_api = KKTIX()
+    for org in kktix_orgs:
+        org_event = kktix_api.get_meetup_info(org[2])
+        if org_event is None:
+            try:
+                os.remove(org[0].replace("package.json", "events.json"))
+            except BaseException:
+                continue
+        else:
+            with io.open(org[0].replace("package.json", "events.json"), 'w', encoding='utf8') as outfile:
+                str_ = json.dumps(org_event,
+                                  indent=2, sort_keys=True,
+                                  separators=(',', ': '), ensure_ascii=False)
+                outfile.write(to_unicode(str_))
 
 
 def add_meetup_event(meetup_groups):
@@ -32,7 +44,6 @@ def add_meetup_event(meetup_groups):
         config['MEETUP_API']['refresh_token'])
     access_token = meetup_api.refresh_access_token()
     for org in meetup_groups:
-        print(org)
         org_event = meetup_api.get_meetup_info(access_token, org[2])
         if org_event is None:
             try:
@@ -63,7 +74,6 @@ def Initial():
     all_files = get_group_files()
     for gfile in all_files:
         data = json.load(open(gfile))
-        print(data["registration"]["type"], data["registration"]["url"])
         if data["registration"]["type"] == "meetup":
             meetup_groups.append(
                 [gfile, data["name"], data["registration"]["url"]])
@@ -76,18 +86,18 @@ def Initial():
 def update():
     (meetup_groups, kktix_groups) = Initial()
     t1 = Thread(target=add_meetup_event, args=(meetup_groups, ))
-    #t2 = Thread(target=add_kktix_event, args=(kktix_groups, ))
+    t2 = Thread(target=add_kktix_event, args=(kktix_groups, ))
     t1.start()
-    # t2.start()
+    t2.start()
 
 
 def main():
-    "Using argparse to get instance name"
+    "Using argparse to get events or search meetup"
     parser = argparse.ArgumentParser(description='TGmeetup')
     parser.add_argument(
         '-u',
         '--update',
-        help='Update the meetups infomation.',
+        help='Update the events.json infomation.',
         action="store_true")
     parser.add_argument(
         '-c',
