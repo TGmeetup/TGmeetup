@@ -10,6 +10,7 @@ import subprocess
 from threading import Thread
 from libs.RegistrationAPI.KKTIX import *
 from libs.RegistrationAPI.Meetup import *
+from parsing import *
 import io
 try:
     to_unicode = unicode
@@ -91,6 +92,20 @@ def update():
     t2.start()
 
 
+def print_result(result):
+    print("Name\tTitle\tCity\n")
+    print("\t\t\tMeetup\tDate\n")
+    print("\t\t\tLink\n")
+    print("==========================================================\n")
+    for r in result:
+        if len(r) > 3:
+            print(r[0] + "\t" + r[1] + "\t" + r[2] + "\n")
+            print("\t\t\t" + r[3] + "\t" + r[4] + "\n")
+            print("\t\t\t" + r[5] + "\n")
+        else:
+            print(r[0] + "\t" + r[1] + "\t" + r[2] + "\n")
+
+
 def main():
     "Using argparse to get events or search meetup"
     parser = argparse.ArgumentParser(description='TGmeetup')
@@ -119,6 +134,39 @@ def main():
     if args.update:
         update()
         print("Update all the meetup infomation.")
+    parsing = Parsing()
+    if args.city is not None or args.keyword is not None or args.name is not None:
+        if args.name is not None and args.city is None and args.keyword is None:
+            # Show the group info (default country = Taiwan)
+            result = parsing.show_organization_info(args.name, args.country)
+            print(
+                "The information of \"" +
+                result["title"] +
+                "\" in " +
+                result["city"] +
+                " (" +
+                result["countrycode"] +
+                ")")
+            print(json.dumps(result, indent=2))
+        elif args.city is not None and args.name is None and args.keyword is None:
+            # List all the meetup in the city (default country = Taiwan)
+            result = parsing.get_meetup_via_city(args.city, args.country)
+            print_result(result)
+        elif args.keyword is not None and args.city is None and args.name is None:
+            # List all the meetup related to this keyword (default country =
+            # Taiwan)
+            result = parsing.show_meetup_via_keyword(
+                args.keyword, args.country)
+            print_result(result)
+        else:
+            print(
+                "Please just use one option, such as name,keyword or city, and country option.")
+            print("eg.")
+            print("tgmeetup -k keypord\n tgmeetup -n name\ntgmetup -t Hsinchu")
+    else:
+        # List all group with event in the country(default country = Taiwan).
+        result = parsing.list_all_group_in_country(args.country)
+        print_result(result)
 
 
 if __name__ == '__main__':
