@@ -6,8 +6,18 @@ import json
 
 
 class Parsing():
+    def get_mydir(self):
+        cmd = "find ~/ -name TGmeetup | sed -n '1p'"
+        output = subprocess.check_output(cmd, shell=True)
+        try:
+            mydir = str(output.splitlines()).split("'")[1]
+        except:
+            mydir = str(output.splitlines())
+        return mydir
+
     def get_org_files(self, country):
-        cmd = "du -a community conference | grep " + \
+        mydir = self.get_mydir()
+        cmd = "du -a "+mydir+"/community "+mydir+"/conference | grep " + \
             country + " | grep package.json | awk '{print $2}'"
         organization_file = subprocess.check_output(cmd, shell=True)
         all_org = []
@@ -18,7 +28,8 @@ class Parsing():
     def show_organization_info(self, name, country=None):
         if country is None:
             country = "tw"
-        cmd = "du -a community conference | grep " + \
+        mydir = self.get_mydir()
+        cmd = "du -a "+mydir+"/community "+mydir+"/conference | grep " + \
             country + "/" + name + "/package.json | awk '{print $2}'"
         organization_file = subprocess.check_output(cmd, shell=True)
         data = json.load(

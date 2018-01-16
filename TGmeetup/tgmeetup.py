@@ -35,9 +35,20 @@ def add_kktix_event(kktix_orgs):
                 outfile.write(to_unicode(str_))
 
 
+def get_mydir():
+    cmd = "find ~/ -name TGmeetup | sed -n '1p'"
+    output = subprocess.check_output(cmd, shell=True)
+    try:
+        mydir = str(output.splitlines()).split("'")[1]
+    except:
+        mydir = str(output.splitlines())
+    return mydir
+
+
 def add_meetup_event(meetup_groups):
+    mydir = get_mydir()
     config = configparser.ConfigParser()
-    config.read('API.cfg')
+    config.read(mydir+'/API.cfg')
     meetup_api = Meetup(
         config['MEETUP_API']['API_URL'],
         config['MEETUP_API']['API_KEY'],
@@ -60,13 +71,15 @@ def add_meetup_event(meetup_groups):
 
 
 def get_group_files():
-    output = subprocess.check_output(
-        "du -a community conference | grep package.json | awk '{print $2}'",
-        shell=True)
+    mydir = get_mydir()
+    cmd = "du -a "+mydir+"/community "+mydir+"/conference | grep package.json | awk '{print $2}'"
+    output = subprocess.check_output(cmd, shell=True)
     gf_all = []
     for gf in output.splitlines():
-        #gf_all.append(str(gf).split("'")[1])
-        gf_all.append(str(gf))
+        try:
+            gf_all.append(str(gf).split("'")[1])
+        except:
+            gf_all.append(str(gf))
     return(gf_all)
 
 
