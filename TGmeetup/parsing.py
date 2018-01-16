@@ -7,18 +7,18 @@ import json
 
 class Parsing():
     def get_org_files(self, country):
-        cmd = "du -a ../community ../conference | grep " + \
+        cmd = "du -a community conference | grep " + \
             country + " | grep package.json | awk '{print $2}'"
         organization_file = subprocess.check_output(cmd, shell=True)
         all_org = []
         for org in organization_file.splitlines():
-            all_org.append(str(org).split("'")[1])
+            all_org.append(str(org))
         return all_org
 
     def show_organization_info(self, name, country=None):
         if country is None:
             country = "tw"
-        cmd = "du -a ../community ../conference | grep " + \
+        cmd = "du -a community conference | grep " + \
             country + "/" + name + "/package.json | awk '{print $2}'"
         organization_file = subprocess.check_output(cmd, shell=True)
         data = json.load(

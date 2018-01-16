@@ -61,11 +61,12 @@ def add_meetup_event(meetup_groups):
 
 def get_group_files():
     output = subprocess.check_output(
-        "du -a ../community ../conference | grep package.json | awk '{print $2}'",
+        "du -a community conference | grep package.json | awk '{print $2}'",
         shell=True)
     gf_all = []
     for gf in output.splitlines():
-        gf_all.append(str(gf).split("'")[1])
+        #gf_all.append(str(gf).split("'")[1])
+        gf_all.append(str(gf))
     return(gf_all)
 
 
@@ -131,9 +132,6 @@ def main():
         type=str,
         help='This is a keyword of community. This could help find the related community.')
     args = parser.parse_args()
-    if args.update:
-        update()
-        print("Update all the meetup infomation.")
     parsing = Parsing()
     if args.city is not None or args.keyword is not None or args.name is not None:
         if args.name is not None and args.city is None and args.keyword is None:
@@ -164,9 +162,13 @@ def main():
             print("eg.")
             print("tgmeetup -k keypord\n tgmeetup -n name\ntgmetup -t Hsinchu")
     else:
-        # List all group with event in the country(default country = Taiwan).
-        result = parsing.list_all_group_in_country(args.country)
-        print_result(result)
+        if args.update:
+            update()
+            print("Update all the meetup infomation.")
+        else:
+            # List all group with event in the country(default country = Taiwan).
+            result = parsing.list_all_group_in_country(args.country)
+            print_result(result)
 
 
 if __name__ == '__main__':
