@@ -42,13 +42,14 @@
 ```sh
 $ git clone https://github.com/sufuf3/TGmeetup.git
 $ cd TGmeetup
+$ cp API.cfg.sample API.cfg
 $ make install
-$ make update
 ```
+請注意：請到 Meetup API 註冊 OAuth consumer: https://secure.meetup.com/meetup_api/oauth_consumers/create/。這邊為操作說明：https://hackmd.io/s/ByrxYmi4G。
 
 ## Usage
 ```sh
-usage: tgmeetup.py [-h] [-u] [-c COUNTRY] [-t CITY] [-n NAME] [-k KEYWORD]
+usage: tgmeetup [-h] [-u] [-c COUNTRY] [-t CITY] [-n NAME] [-k KEYWORD]
 
 TGmeetup
 

@@ -43,13 +43,14 @@ This project uses python3 on Unix-like and MacOS. Go check them out if you don't
 ```sh
 $ git clone https://github.com/sufuf3/TGmeetup.git
 $ cd TGmeetup
+$ cp API.cfg.sample API.cfg
 $ make install
-$ make update
 ```
+Note: Please ADD YOUR MEETUP KEY into API.cfg.
 
 ## Usage
 ```sh
-usage: tgmeetup.py [-h] [-u] [-c COUNTRY] [-t CITY] [-n NAME] [-k KEYWORD]
+usage: tgmeetup [-h] [-u] [-c COUNTRY] [-t CITY] [-n NAME] [-k KEYWORD]
 
 TGmeetup
 
