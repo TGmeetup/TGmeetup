@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/TGmeetup/TGmeetup.svg?branch=master)](https://travis-ci.org/TGmeetup/TGmeetup)
 
+[英文版](../README.md)
+
 > 一個搜集技術類社群的專案
 
 這是一個搜集技術類社群的專案。我們搜集所有有關於社群的資訊，並透過大家的 Meetup 連結（如：Meetup, KKTIX...），透過 API 拿取最新的活動資訊。讓大家取得社群資訊以及社群的活動資訊的專案。

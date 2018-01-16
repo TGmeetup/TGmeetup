@@ -1,6 +1,7 @@
 # TGmeetup
 
 [![Build Status](https://travis-ci.org/TGmeetup/TGmeetup.svg?branch=master)](https://travis-ci.org/TGmeetup/TGmeetup)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/tgmeetup/5)
 
 [中文版](documents/README_zh-tw.md)
 
@@ -90,7 +91,7 @@ Thanks to these contributors, you can see them all here: https://github.com/TGme
 
 ## Contribute
 Feel free to dive in! [Open an issue](https://github.com/RichardLitt/standard-readme/issues/new) or submit PRs.
-To submit PRs to TGmeetup, please refer to [CONTRIBUTING.md](). It should contain most of the things you'll need to get your contribution started!
+To submit PRs to TGmeetup, please refer to [CONTRIBUTING.md](CONTRIBUTING.md). It should contain most of the things you'll need to get your contribution started!
 
 
 ## License
