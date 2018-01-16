@@ -94,14 +94,14 @@ def update():
 
 def print_result(result):
     print("Name\tTitle\tCity\n")
-    print("\t\t\tMeetup\tDate\n")
-    print("\t\t\tLink\n")
+    print("\t\tMeetup\tDate\n")
+    print("\t\tLink\n")
     print("==========================================================\n")
     for r in result:
         if len(r) > 3:
             print(r[0] + "\t" + r[1] + "\t" + r[2] + "\n")
-            print("\t\t\t" + r[3] + "\t" + r[4] + "\n")
-            print("\t\t\t" + r[5] + "\n")
+            print("\t\t\t\t" + r[3] + "\t" + r[4] + "\n")
+            print("\t\t\t\t" + r[5] + "\n")
         else:
             print(r[0] + "\t" + r[1] + "\t" + r[2] + "\n")
 
