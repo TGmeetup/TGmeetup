@@ -22,7 +22,10 @@ class Parsing():
         organization_file = subprocess.check_output(cmd, shell=True)
         all_org = []
         for org in organization_file.splitlines():
-            all_org.append(str(org))
+            try:
+                all_org.append(str(org).split("'")[1])
+            except:
+                all_org.append(str(org))
         return all_org
 
     def show_organization_info(self, name, country=None):
