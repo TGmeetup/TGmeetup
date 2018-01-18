@@ -3,12 +3,17 @@
 import json
 import pytest
 import subprocess
+import difflib
+import os
+import io
+try:
+    to_unicode = unicode
+except NameError:
+    to_unicode = str
 
 # 1. Is it a good json format? (Maybe someone let it as unformatted json file.)
 # 2. Varify the json file is used 2 spaces per indent level.
-# 3. Check every object:
-
-# Get json files
+# 3. Check every object
 
 
 class GetFiles():
@@ -46,7 +51,22 @@ class TestFileFormat:
             assert True, "Expected pytest.raises.Exception"
 
     def test_indent(self):
-        pass
+        get_files = GetFiles()
+        all_files = get_files.get_group_files()
+        for org_file in all_files:
+            data = json.load(open(org_file))
+            with io.open("tmplate.json", 'w', encoding='utf8') as outfile:
+                str_ = json.dumps(data,
+                                  indent=2, sort_keys=False,
+                                  separators=(',', ': '), ensure_ascii=False)
+                outfile.write(to_unicode(str_))
+            f1 = open(org_file)
+            f2 = open("tmplate.json")
+            with f1, f2, open('outfile.txt', 'w') as outfile:
+                for line1, line2 in zip(f1, f2):
+                    if line2 != "}":
+                        assert line1 == line2, org_file
+        os.remove("tmplate.json")
 
 
 class TestObjects:
