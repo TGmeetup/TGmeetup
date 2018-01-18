@@ -12,10 +12,12 @@
     "type": "meetup",
     "url": "https://www.meetup.com/Taipei-HashiCorp-User-Group/"
   },
-  "social-media": {
-    "type": "facebook",
-    "urls": [
-      "https://www.facebook.com/groups/113425279448910/"
-    ]
-  }
+  "social-media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/groups/113425279448910/"
+      ]
+    }
+  ]
 }

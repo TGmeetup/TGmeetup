@@ -2,7 +2,7 @@
   "name": "PyConTaiwan",
   "title": "PyCon Taiwan",
   "description": "PyCon Taiwan is an annual convention in Taiwan for the discussion and promotion of the Python programming language. It is held by enthusiasts and focuses on Python technology and its versatile applications. We welcome people who are interested in Python to join PyCon Taiwan to share knowledge, exchange ideas, make connections and to help us grow our network.",
-  "country": "tw",
+  "countrycode": "tw",
   "city": "Taipei",
   "homepage": "https://tw.pycon.org/",
   "keywords": [
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "social-medias": [
+  "social-media": [
     {
       "type": "facebook",
       "urls": [

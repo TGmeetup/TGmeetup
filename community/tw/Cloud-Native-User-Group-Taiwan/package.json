@@ -14,10 +14,12 @@
     "type": "meetup",
     "url": "https://www.meetup.com/Cloud-Native-User-Group-Taiwan/"
   },
-  "social-media": {
-    "type": "facebook",
-    "urls": [
-      "https://www.facebook.com/groups/cloudnative.tw/"
-    ]
-  }
+  "social-media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/groups/cloudnative.tw/"
+      ]
+    }
+  ]
 }

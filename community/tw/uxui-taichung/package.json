@@ -2,7 +2,7 @@
   "name": "uxui-taichung",
   "title": "UX/UI 台中聚",
   "description": "",
-  "country": "tw",
+  "countrycode": "tw",
   "city": "Taichung",
   "keywords": [
     "UI",

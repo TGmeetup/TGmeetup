@@ -15,18 +15,22 @@
     "type": "meetup",
     "url": "https://www.meetup.com/DigitalOceanHsinchu/"
   },
-  "chat": {
-    "type": "slack",
-    "urls": [
-      "https://digitaloceanhsinchuslack.herokuapp.com/",
-      "https://digitaloceanhsinchu.slack.com"
-    ]
-  },
-  "social-media": {
-    "type": "facebook",
-    "urls": [
-      "https://www.facebook.com/DigitalOceanHsinchu/",
-      "https://www.facebook.com/groups/DigitalOceanHsinchu/"
-    ]
-  }
+  "chat": [
+    {
+      "type": "slack",
+      "urls": [
+        "https://digitaloceanhsinchuslack.herokuapp.com/",
+        "https://digitaloceanhsinchu.slack.com"
+      ]
+    }
+  ],
+  "social-media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/DigitalOceanHsinchu/",
+        "https://www.facebook.com/groups/DigitalOceanHsinchu/"
+      ]
+    }
+  ]
 }
