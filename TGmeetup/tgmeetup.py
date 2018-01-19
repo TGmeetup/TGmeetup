@@ -11,7 +11,10 @@ from libs.RegistrationAPI.KKTIX import KKTIX
 from libs.RegistrationAPI.Meetup import Meetup
 from parsing import Parsing
 import io
-to_unicode = str
+try:
+    to_unicode = unicode
+except NameError:
+    to_unicode = str
 
 
 def add_kktix_event(kktix_orgs):

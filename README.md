@@ -80,7 +80,7 @@ $ pip3 install -r requirements.txt
 ### Code style
 Follow PEP 8
 ```sh
-autopep8 --in-place --aggressive --aggressive <filename>
+autopep8 --in-place --aggressive --max-line-length=88 <filename>
 ```
 
 ### Tests
