@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # coding=utf-8
 import subprocess
-import requests
 import json
 
 
@@ -11,20 +10,20 @@ class Parsing():
         output = subprocess.check_output(cmd, shell=True)
         try:
             mydir = str(output.splitlines()).split("'")[1]
-        except:
+        except BaseException:
             mydir = str(output.splitlines())
         return mydir
 
     def get_org_files(self, country):
         mydir = self.get_mydir()
-        cmd = "du -a "+mydir+"/community "+mydir+"/conference | grep " + \
+        cmd = "du -a " + mydir + "/community " + mydir + "/conference | grep " + \
             country + " | grep package.json | awk '{print $2}'"
         organization_file = subprocess.check_output(cmd, shell=True)
         all_org = []
         for org in organization_file.splitlines():
             try:
                 all_org.append(str(org).split("'")[1])
-            except:
+            except BaseException:
                 all_org.append(str(org))
         return all_org
 
@@ -32,7 +31,7 @@ class Parsing():
         if country is None:
             country = "tw"
         mydir = self.get_mydir()
-        cmd = "du -a "+mydir+"/community "+mydir+"/conference | grep " + \
+        cmd = "du -a " + mydir + "/community " + mydir + "/conference | grep " + \
             country + "/" + name + "/package.json | awk '{print $2}'"
         organization_file = subprocess.check_output(cmd, shell=True)
         data = json.load(

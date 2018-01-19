@@ -3,7 +3,6 @@
 import json
 import pytest
 import subprocess
-import difflib
 import os
 import io
 try:
@@ -44,7 +43,7 @@ class TestFileFormat:
             get_files = GetFiles()
             all_files = get_files.get_group_files()
             for org_file in all_files:
-                data = json.load(open(org_file))
+                json.load(open(org_file))
         except pytest.raises.Exception as e:
             assert e.msg == message
         else:

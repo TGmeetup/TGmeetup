@@ -3,19 +3,15 @@
 
 import os
 import json
-import time
 import argparse
 import configparser
 import subprocess
 from threading import Thread
-from libs.RegistrationAPI.KKTIX import *
-from libs.RegistrationAPI.Meetup import *
-from parsing import *
+from libs.RegistrationAPI.KKTIX import KKTIX
+from libs.RegistrationAPI.Meetup import Meetup
+from parsing import Parsing
 import io
-try:
-    to_unicode = unicode
-except NameError:
-    to_unicode = str
+to_unicode = str
 
 
 def add_kktix_event(kktix_orgs):
@@ -28,7 +24,8 @@ def add_kktix_event(kktix_orgs):
             except BaseException:
                 continue
         else:
-            with io.open(org[0].replace("package.json", "events.json"), 'w', encoding='utf8') as outfile:
+            event_file = org[0].replace("package.json", "events.json")
+            with io.open(event_file, 'w', encoding='utf8') as outfile:
                 str_ = json.dumps(org_event,
                                   indent=2, sort_keys=True,
                                   separators=(',', ': '), ensure_ascii=False)
@@ -40,7 +37,7 @@ def get_mydir():
     output = subprocess.check_output(cmd, shell=True)
     try:
         mydir = str(output.splitlines()).split("'")[1]
-    except:
+    except BaseException:
         mydir = str(output.splitlines())
     return mydir
 
@@ -48,7 +45,7 @@ def get_mydir():
 def add_meetup_event(meetup_groups):
     mydir = get_mydir()
     config = configparser.ConfigParser()
-    config.read(mydir+'/API.cfg')
+    config.read(mydir + '/API.cfg')
     meetup_api = Meetup(
         config['MEETUP_API']['API_URL'],
         config['MEETUP_API']['API_KEY'],
@@ -63,7 +60,8 @@ def add_meetup_event(meetup_groups):
             except BaseException:
                 continue
         else:
-            with io.open(org[0].replace("package.json", "events.json"), 'w', encoding='utf8') as outfile:
+            event_file = org[0].replace("package.json", "events.json")
+            with io.open(event_file, 'w', encoding='utf8') as outfile:
                 str_ = json.dumps(org_event,
                                   indent=2, sort_keys=True,
                                   separators=(',', ': '), ensure_ascii=False)
@@ -72,13 +70,14 @@ def add_meetup_event(meetup_groups):
 
 def get_group_files():
     mydir = get_mydir()
-    cmd = "du -a "+mydir+"/community "+mydir+"/conference | grep package.json | awk '{print $2}'"
+    cmd = "du -a " + mydir + "/community " + mydir + \
+        "/conference | grep package.json | awk '{print $2}'"
     output = subprocess.check_output(cmd, shell=True)
     gf_all = []
     for gf in output.splitlines():
         try:
             gf_all.append(str(gf).split("'")[1])
-        except:
+        except BaseException:
             gf_all.append(str(gf))
     return(gf_all)
 
@@ -143,7 +142,8 @@ def main():
         '-k',
         '--keyword',
         type=str,
-        help='This is a keyword of community. This could help find the related community.')
+        help='This is a keyword of community. \
+              This could help find the related community.')
     args = parser.parse_args()
     parsing = Parsing()
     if args.city is not None or args.keyword is not None or args.name is not None:
@@ -171,7 +171,8 @@ def main():
             print_result(result)
         else:
             print(
-                "Please just use one option, such as name,keyword or city, and country option.")
+                "Please just use one option, such as name,keyword or city, \
+                 and country option.")
             print("eg.")
             print("tgmeetup -k keypord\n tgmeetup -n name\ntgmetup -t Hsinchu")
     else:
