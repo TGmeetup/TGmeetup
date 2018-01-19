@@ -161,7 +161,7 @@ def main():
                 " (" +
                 result["countrycode"] +
                 ")")
-            print(json.dumps(result, indent=2))
+            print(json.dumps(result, indent=2, sort_keys=False))
         elif args.city is not None and args.name is None and args.keyword is None:
             # List all the meetup in the city (default country = Taiwan)
             result = parsing.get_meetup_via_city(args.city, args.country)
