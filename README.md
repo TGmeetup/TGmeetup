@@ -9,7 +9,7 @@
 
 This is a collection set of technical groups' meetup. Collect the technical meetup information and get the activity from meetup platform, such as Meetup, KKTIX ... etc. The user can use this tool to find technical meetup and attend it.
 
-![](header.png)
+![](imgs/output.gif)
 
 ## Table of Contents
 
@@ -42,6 +42,7 @@ This is a collection set of technical groups' meetup. Collect the technical meet
 ## Install
 This project uses python3 on Unix-like and MacOS. Go check them out if you don't have them locally installed.
 ```sh
+$ sudo apt install python-setuptools
 $ git clone https://github.com/sufuf3/TGmeetup.git
 $ cd TGmeetup
 $ cp API.cfg.sample API.cfg
@@ -72,6 +73,7 @@ optional arguments:
 
 ### Guide
 ```sh
+$ sudo apt install python-setuptools
 $ python3 -m venv venv
 $ source venv/bin/activate
 $ pip3 install -r requirements.txt

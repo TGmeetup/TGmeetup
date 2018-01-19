@@ -8,7 +8,7 @@
 
 這是一個搜集技術類社群的專案。我們搜集所有有關於社群的資訊，並透過大家的 Meetup 連結（如：Meetup, KKTIX...），透過 API 拿取最新的活動資訊。讓大家取得社群資訊以及社群的活動資訊的專案。
 
-![](header.png)
+![](../imgs/output.gif)
 
 ## Table of Contents
 
@@ -42,6 +42,7 @@
 ## Install
 這專案可執行於 Unix-like 與 MacOS 系統上，並且需要有 python3 的環境。
 ```sh
+$ sudo apt install python-setuptools
 $ git clone https://github.com/sufuf3/TGmeetup.git
 $ cd TGmeetup
 $ cp API.cfg.sample API.cfg
@@ -72,6 +73,7 @@ optional arguments:
 
 ### Guide
 ```sh
+$ sudo apt install python-setuptools
 $ python3 -m venv venv
 $ source venv/bin/activate
 $ pip3 install -r requirements.txt
