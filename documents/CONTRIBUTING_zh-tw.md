@@ -1,11 +1,12 @@
-# Contributing to TGmeetup
+# 貢獻 TGmeetup
 
 [英文版](../CONTRIBUTING.md)
 
-Thanks for taking the time to contribute!
-The following is a set of guidelines for contributing to TGmeetup. Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved.
+非常感謝您投入時間貢獻於 TGmeetup 專案！  
+以下是有關於如何貢獻 TGmeetup 的指南。請您花點時間閱讀這份文件，透過這份文件，您會更了解如何簡單且有效的來進行貢獻的程序。  
+我們有[行為守則](../CODE_OF_CONDUCT.md)，請您花點時間閱讀，這將會對於您投入此專案時，會有良好的互動。  
+謝謝您的參與及貢獻。
 
-Please note we have a [code of conduct](CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
 
 ## Table of Contents
 
@@ -25,27 +26,27 @@ Please note we have a [code of conduct](CODE_OF_CONDUCT.md), please follow it in
 
 ## Open issues
 
-We use GitHub issues to track public bugs. Report a bug by opening a new issue; it's that easy!
+我們使用 GitHub issues 來追蹤公開的問題。透過建立 issue 來回報問題或是加技術社群的資訊是很容易的。我們主要以英文來描述問題。
 
 ### Request a community
 
-For the new community request issue, please fill in the information of the community to let people know.
+在開 issue 請求添加新的技術社群時，請填寫相關的資訊與連結，方便讓人們知道。
 
 ### Bug reports
 
-A bug is a _demonstrable problem_ that is caused by the code in the repository. Good bug reports are extremely helpful - thank you!
+當 repo 的程式出現 BUG 時，請提出驗證。好的 Bug 回報是很有用的。謝謝！
 
-Guidelines for bug reports:
+Bug 回報指南：
 
-1. **Use the GitHub issue search** &mdash; check if the issue has already been reported.
+1. **使用 GitHub issue 來搜尋** &mdash; 確認是否已經有存在的 issue 已經回報。
 
-2. **Check if the issue has been fixed** &mdash; try to reproduce it using the latest `master` branch in the repository.
+2. **確認是否有 issue 已經被修復** &mdash; 請嘗試使用 repository 中最新的 `master` 分支來重現它。
 
-3. **Isolate the problem** &mdash; ideally create a reduced test case.
+3. **隔離問題** &mdash; 建立一個簡單的測試範例。
 
-A good bug report shouldn't leave others needing to chase you up for more information. Please try to be as detailed as possible in your report. What is your environment? What steps will reproduce the issue? What OS experiences the problem? What would you expect to be the outcome? All these details will help people to fix any potential bugs.
+一個好的錯誤報告不應該讓其他人請你提供更多的資訊。 請您盡量在報告中描述的越詳細越好。包含你的環境是什麼？哪些步驟會出現此問題？是在什麼作業系統下遇到問題？你期望的結果呢是什麼？這些細節將幫助人們修復任何一個潛在的錯誤。謝謝。
 
-Example:
+範例：
 
 > Short and descriptive example bug report title
 >
@@ -60,28 +61,58 @@ Example:
 
 ### Feature requests
 
-Feature requests are welcome. But take a moment to find out whether your idea fits with the scope and aims of the project. It would make a strong case to convince the project's developers of the merits of this feature. Please provide as much detail and context as possible.
+我們歡迎功能的請求。但請您花一點時間，找出您的想法是否符合專案的範圍和目標。說服這個專案的開發者關於您這個功能的優點是一個很好的例子。 請您盡可能的提供更多的細節和內容。謝謝。
 
 ## Pull requests
 
-Pull requests are the best way to propose changes to the codebase (we use [Github Flow](https://guides.github.com/introduction/flow/index.html)). We actively welcome your pull requests:
+發出 pull requests 是對 codebase 進行更動的最佳方式。(我們使用 [Github Flow](https://guides.github.com/introduction/flow/index.html)). 我們非常歡迎您的 pull requests:
 
-1. Fork the repo and create your branch from `master`.
-2. If you've added code that should be tested, add tests.
-3. If you've changed APIs, update the documentation.
-4. Ensure the test suite passes.
-5. Make sure your code lints.
-6. Issue that pull request!
+1. Fork 本專案的 repo 並且從 `master` 建立你的分支
+2. 如果你已經添加您的程式碼，請先測試過現有的測試，並且添加您的程式碼的測試。
+3. 如果您有添加新功能，請一起更新 README 檔案。
+4. 確保都有通過每一項測試。
+5. 確保程式碼都為有效的程式。
+6. 送出 pull request。
 
 ### Add a community
 
-> To be continue
+請參閱 [package.json.sample](package.json.sample)，這是一份 package.json 範例檔。要加入技術社群資訊，請依據以下順序進行。  
+(再進行之前，請搜尋是否有存在的 pull request ，以及是否有相關的 issue，依據尊重原則，我們會保留先送 pull request 的貢獻者，若是後面有重複的 pull request，我們只能非常抱歉的請您關閉該重複的 pull request。若發現原貢獻者遲遲為修改該 pull request，還請您在該 pull request 留言詢問，倘若太久，我們也可以討論是否關閉原 pull request ，讓您重新送一個 pull request 進行貢獻，謝謝。)  
+1. 找尋 [community](../community) 或 [conference](../conference) 目錄底下目前是否有該技術社群所存在的 country code ？如果有請到該目錄底下，沒有請建立一個新的 country code 資料夾。
+2. 創建一個屬於該社群的目錄名(資料夾名稱)，目錄名應為一個英文單字，建議為該社群的縮寫，或是活動報名 URL 的社群名。
+3. 進到該新建的目錄底下，並且建立一個新的檔案，檔案名為 package.json。
+4. 編輯 package.json，請參閱[package.json.sample](package.json.sample) ，並請遵循 Json 格式。
+   - 必要欄位有：`name`, `title`, `countrycode`, `city`, `keywords`, `registration`
+   - 非必要欄位，但可以讓該社群資訊更豐富的欄位：`description`, `homepage`, `contact`, `contributors`, `repository`, `chat`, `social-media`
+   - 以下為各欄位(key)介紹：
+      - `name`: 必要欄位(object)，值(value)為一個字串，該字串的名稱需和該目錄資料夾同名，且為一個英文單字，建議為該社群的縮寫，或是活動報名 URL 的社群名。
+      - `title`: 必要欄位(object)，值(value)為字串，該字串為該社群真正的名字，中間可以有空白。
+      - `countrycode`: 必要欄位(object)，值(value)為字串，該 country code 須遵循 ISO 3166-1 alpha-2 的規範。
+      - `city`: 必要欄位(object)，值(value)為字串，為城市的欄位。
+      - `keywords`: 必要欄位(object)，值(value)為 List ，為搜尋的關鍵字，只要是與該技術社群相關的關鍵字，都可以放到這裡。請使用一個字一行，方便閱讀。
+      - `registration`: 必要欄位(object)，值(value)為 Dictionary 。當中包含兩種key：
+         - type: 該值(value)主要填入報名的平台名稱，目前只支援 Meetup 或 kktix，您也可填寫其他的平台名稱，待未來功能加入時，可以支援。
+         - url: 為報名連結。
+      - `description`: 非必要欄位(object)，值(value)為一個字串，為該技術社群的描述。
+      - `homepage`: 非必要欄位(object)，值(value)為一個字串，為該社群的網站。
+      - `contact`: 非必要欄位(object)，值(value)為一個字串，為該社群公開的聯繫方式。
+      - `contributors`: 非必要欄位(object)，值(value)為一個字串，為該社群的維護者資訊。
+      - `repository`: 非必要欄位(object)，值(value)為一個 Dictionary，為該社群的 Git repository，例如： GitHub 的 organization 主要連結。
+      - `chat`: 非必要欄位(object)，值(value)為 List ，為該社群討論的平台連結。
+      - `social-media`: 非必要欄位(object)，值(value)為 List ，為該技術社群的社群媒體連結。
+5. 編輯完畢後，請將該檔案存檔。依據 GitHub Flow 進行貢獻。 commit message 請參考以下範例描述。  
+註一：`<>`請於您編輯該 commit message 的時候移除  
+註二：`<group type>` = `community` 或 `conference`  
+註三：若有關聯的 issue 請於該 commit message title(或 body) 後面加上 `, close #<issue number>` 或是 `, cc #<issue number>`。  
+```
+[<group type>] Add <countrycode>/<技術社群名稱>
+```
 
 ### For new Contributors
 
-If you never sent a pull request before, welcome :tada: [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github) to help you send one 
+如果您從未發送過 pull request ，歡迎參閱 [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)，本篇的教學會幫助您了解如何送一個 pull request 的。
 
-1. [Fork](http://help.github.com/fork-a-repo/) the project, clone your fork, and configure the remotes:
+1. [Fork](http://help.github.com/fork-a-repo/) 本專案，clone 您 fork 的專案到您的本機端，並且設定您的 remotes:
 
    ```bash
    # Clone your fork of the repo into the current directory
@@ -92,46 +123,46 @@ If you never sent a pull request before, welcome :tada: [How to Contribute to an
    git remote add upstream https://github.com/TGmeetup/<repo-name>
    ```
 
-2. If you cloned a while ago, get the latest changes from upstream:
+2. 如果您 clone 下來的專案有些過時，請從 upstream 取得最新的更新(最新的 commit):
 
    ```bash
    git checkout master
    git pull upstream master
    ```
 
-3. Create a new topic branch (off the main project development branch) to contain your feature, change, or fix:
+3. 創建一個新的主題分支(不包含主要專案的開發分支）以包含您的功能、更改或修復：
 
    ```bash
    git checkout -b <topic-branch-name>
    ```
 
-4. Make sure to update, or add to the tests when appropriate. Patches and features will not be accepted without tests. Run `pytest` to check that all tests pass after you've made changes. Look for a `Testing` section in the project’s README for more information.
+4. 請適當地確保更新或加入測試。沒有測試，我們將沒辦法接受修補或是新功能。請執行 `pytest` 來檢查您的程式是否有通過所有的測試。請到專案的 README 頁面的 `Testing` 取得更多的資訊。
 
-5. Push your topic branch up to your fork:
+5. Push 你的分支到您的 fork repository:
 
    ```bash
    git push origin <topic-branch-name>
    ```
 
-6. Go to this [TGmeetup repo](https://github.com/TGmeetup/TGmeetup) and [open a Pull Request](https://help.github.com/articles/using-pull-requests/) with a clear title and description.
+6. 請到本專案的 GitHub 頁面 [TGmeetup repo](https://github.com/TGmeetup/TGmeetup) 並且 [開一個 Pull Request](https://help.github.com/articles/using-pull-requests/)，請在該 Pull request 中寫下清楚的標題與詳細的描述。
 
 
 ## Styleguides
 ### Git Commit Messages
-- Use the present tense ("Add feature" not "Added feature")
-- Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
-- Limit the subject line to 50 characters
-- Wrap the body at 72 characters
-- Need reference issues and pull requests liberally
+- 請使用現在式 ("Add feature" 不是 "Added feature")
+- 請使用祈使語氣 ("Move cursor to..." 不是 "Moves cursor to...")
+- Commit message 的 subject line 請縮減於 50 個字元內
+- Commit message 的 body 每一行請少於 72 字元內
+- 在 commit message 中請關聯相關的 issue 或 pull requests 的編號
 
 ### Package.json format
-Here is an sample [documents/package.json.sample](documents/package.json.sample), please follow it.  
-Also, we use 2 spaces for indentation rather than tabs.  
-The Required fields is: `name`, `title`, `countrycode`, `city`, `keywords`, `registration`.  
+請參閱範例 [package.json.sample](package.json.sample)，並請遵循它。  
+同時，在 Json 的格式中，我們使用兩個空白作為縮排，請不要使用 tab 或是其他的縮排格式。  
+必要的欄位包含：`name`, `title`, `countrycode`, `city`, `keywords`, `registration`.  
 
 ### Use a Consistent Coding Style
-Follow PEP8 rules.
+遵循 PEP8 的規則。
 
 ## License
-By contributing, you agree that your contributions will be licensed under its MIT License.
+在貢獻本專案時，您同意您的貢獻將依據 MIT 授權進行。謝謝！
 

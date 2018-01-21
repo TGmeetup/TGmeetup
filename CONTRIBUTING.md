@@ -75,7 +75,38 @@ Pull requests are the best way to propose changes to the codebase (we use [Githu
 
 ### Add a community
 
-> To be continue
+Please read [package.json.sample](documents/package.json.sample) which is a sample package.json. If you would like to add a technical group information, please follow the following steps.
+(Please search the existing pull request or issue before you make your contribution. According to respect rule, we would keep the earlier pull request. If there is a duplicated pull request, we will close it and sorry for the inconvenience. However, if the contributor does not revise the pull request for a long time, you could leave a message to ask how to improve the pull request. We can discuss this, maybe close the origin pull request and let you send a new one to improve it. Many thanks.)
+1. Please search the country code of technical group which under [community](community) or [conference](conference) folder. If there is a country code, please move to under the folder, otherwise, please create a folder with country code.
+2. Create a folder of the technical group name, the folder name should be an English word. Using the abbreviation of the technical group or the registration URL of the group is a suggestion.
+3. Create a new file which under this folder and name it as package.json.
+4. Edit package.json. Please read [package.json.sample](documents/package.json.sample) and follow the Json format.
+   - Required fields: `name`, `title`, `countrycode`, `city`, `keywords`, `registration`
+   - Non-Required fields, but can enrich information of technical group: `description`, `homepage`, `contact`, `contributors`, `repository`, `chat`, `social-media`
+   - These are keys introduction:
+      - `name`: A necessary object. It's a string. This value should be the same as the folder name, also should be an English word. Using the abbreviation of the technical group or the registration URL of the group is a suggestion.
+      - `title`: A necessary object. It's a string. Put the whole name of the technical group.
+      - `countrycode`: A necessary object. It's a string. The country code should be followed the rule of ISO 3166-1 alpha-2.
+      - `city`: A necessary object with a string value. The value is a city name.
+      - `keywords`: A necessary object. Put keywords in it. It's an array of strings. This helps people discover the technical group.
+      - `registration`: A necessary object. It's a dictionary. Include tow
+ keys:
+         - type: Put the registration planform name in it. Now, we support Meetup and KKTIX. If there is another registration platform, we will add the feature and support it.
+         - url: Put the registration link of the technical group.
+      - `description`: A non-necessary object. Put a description in it. It's a string. This helps people discover the technical group.
+      - `homepage`: A non-necessary object. It's a string. The url to the technical group homepage.
+      - `contact`: A non-necessary object. It's a string. Put the contact information in it.
+      - `contributors`: A non-necessary object. It's a string. It's the information of the group organizer.
+      - `repository`: A non-necessary object. It's a dictionary. Specify the place where your code lives. This is helpful for people who want to contribute. The URL should be a publicly available url that can be handed directly to a VCS program without any modification. 
+      - `chat`: A non-necessary object. It's a list. This is a chatroom platform of the technical group.
+      - `social-media`: A non-necessary object. It's a list. Put the social media link in it.
+5. After finish it, please save the file. According to the contribution process of GitHub Flow. Please follow the commit message as the following.
+Note 1: Please remove `<>` when you edit the commit message.
+Note 2: `<group type>` = `community` or `conference`
+Note 3: If there is an related issue, please add `, close #<issue number>` or `, cc #<issue number>` after commit message title(or body).
+```
+[<group type>] Add <countrycode>/<the name of technical group>
+```
 
 ### For new Contributors
 
