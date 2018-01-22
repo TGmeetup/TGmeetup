@@ -4,9 +4,9 @@
 
 [英文版](../README.md)
 
-> 一個搜集技術類社群的專案
+> 一個搜集與整合技術類社群的專案
 
-這是一個搜集技術類社群的專案。我們搜集所有有關於社群的資訊，並透過大家的 Meetup 連結（如：Meetup, KKTIX...），透過 API 拿取最新的活動資訊。讓大家取得社群資訊以及社群的活動資訊的專案。
+這是一個搜集與整合技術類社群的專案。我們搜集所有有關於社群的資訊，並透過大家的 Meetup 連結（如：Meetup, KKTIX...），透過 API 拿取最新的活動資訊。讓大家取得社群資訊以及社群的活動資訊的專案。
 
 ![](../imgs/output.gif)
 
@@ -80,21 +80,20 @@ $ pip3 install -r requirements.txt
 ```
 
 ### Code style
-Follow PEP 8
+遵循 PEP8 規則
 ```sh
 autopep8 --in-place --aggressive --max-line-length=88 <filename>
 ```
 
 ### Tests
-Describe and show how to run the tests with code examples.
+使用 `pytest` 進行測試。
 
 ## Contributors
-Thanks to these contributors, you can see them all here: https://github.com/TGmeetup/TGmeetup/graphs/contributors
+謝謝貢獻者們，您可以到 https://github.com/TGmeetup/TGmeetup/graphs/contributors 看到他們。
 
 ## Contribute
-Feel free to dive in! [Open an issue](https://github.com/RichardLitt/standard-readme/issues/new) or submit PRs.
-To submit PRs to TGmeetup, please refer to [CONTRIBUTING.md](). It should contain most of the things you'll need to get your contribution started!
-
+歡迎您隨意[開 issue](https://github.com/RichardLitt/standard-readme/issues/new) 或送 PR 唷！
+若您想要送 PR 到 TGmeetup ，請您先看看 [CONTRIBUTING.md](CONTRIBUTING_zh-tw.md)。這些內容可以幫助您更快了解如何貢獻本專案。謝謝您的加入！
 
 ## License
 MIT
