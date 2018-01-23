@@ -26,18 +26,17 @@ This is a collection set of technical groups' meetup. Collect the technical meet
 
 
 ## Background
-因應不論是台灣或是各地，技術類的社群林立，但發現現今有以下的幾種情況：
-- 對於一般使用者
-   1. 不知道社群相關資訊，不知道從何找起
-   2. 想要參加，但不知道附近有哪些社群可以參加，以及社群的資訊與文化是如何？
-   3. 跨領域中，想透過參與社群讓自己抓到可以學習方向，但不知道該領域的社群有哪些
-   4. 想知道附近有哪些社群近期有聚會，而不是就自己所知的社群一個一個搜尋
-- 社群維護者
-   1. 太多社群活動，不想和其他社群撞期，只能以自身所知的社群來搜集活動資訊
-   2. 想知道同類型的社群，大家辦的活動都是什麼主題
-...
-很多的情況，雖然人工都可以花點時間進行，但是如果有一個整合平台，那大家就不用那麼辛苦的搜集。
-因此，建立的 TGmeetup 專案，搜集各地的社群資訊，透過活動報名平台的 API ，來取得大家的活動資訊，讓大家方便搜尋。而公開的社群 package.json 資訊，也讓大家可以維護相關的資訊，並取得有用的訊息。
+There are lots of technical communities all over the world, but the following problems come with that.
+- For attendents
+    1. Have no idea to find communities' info.
+    2. Desire to attend communities, but don't know the neighbouring communities which they may attend and the information and culture of the communities.
+    3. Would like to know the upcoming meetups around them, instead of searching in known communities.
+- For maintainers
+    1. It's hard to prevent from clashing with other communities meetups.
+    2. Hope to know other communities' which are in the similar field topic.
+
+If there were a platform collecting those informationm, people can save a lot of time.
+Thus, TGmeetup project collects the communities' and activities' information thru the registration platform's API, and make it much easier to search for the information which hit the spot. Besides, the package.json files describing the public communities are good for maintaining.
 
 ## Install
 This project uses python3 on Unix-like and MacOS. Go check them out if you don't have them locally installed.
