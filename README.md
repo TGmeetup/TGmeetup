@@ -85,7 +85,7 @@ autopep8 --in-place --aggressive --max-line-length=88 <filename>
 ```
 
 ### Tests
-Describe and show how to run the tests with code examples.
+Using `pytest`.
 
 ## Contributors
 Thanks to these contributors, you can see them all here: https://github.com/TGmeetup/TGmeetup/graphs/contributors
