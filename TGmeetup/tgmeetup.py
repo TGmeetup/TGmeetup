@@ -17,22 +17,26 @@ except NameError:
     to_unicode = str
 
 
+def wd_event_file(org_event, org):
+    if org_event is None:
+        try:
+            os.remove(org[0].replace("package.json", "events.json"))
+        except BaseException:
+            pass
+    else:
+        event_file = org[0].replace("package.json", "events.json")
+        with io.open(event_file, 'w', encoding='utf8') as outfile:
+            str_ = json.dumps(org_event,
+                              indent=2, sort_keys=True,
+                              separators=(',', ': '), ensure_ascii=False)
+            outfile.write(to_unicode(str_))
+
+
 def add_kktix_event(kktix_orgs):
     kktix_api = KKTIX()
     for org in kktix_orgs:
         org_event = kktix_api.get_meetup_info(org[2])
-        if org_event is None:
-            try:
-                os.remove(org[0].replace("package.json", "events.json"))
-            except BaseException:
-                continue
-        else:
-            event_file = org[0].replace("package.json", "events.json")
-            with io.open(event_file, 'w', encoding='utf8') as outfile:
-                str_ = json.dumps(org_event,
-                                  indent=2, sort_keys=True,
-                                  separators=(',', ': '), ensure_ascii=False)
-                outfile.write(to_unicode(str_))
+        wd_event_file(org_event, org)
 
 
 def get_mydir():
@@ -57,18 +61,7 @@ def add_meetup_event(meetup_groups):
     access_token = meetup_api.refresh_access_token()
     for org in meetup_groups:
         org_event = meetup_api.get_meetup_info(access_token, org[2])
-        if org_event is None:
-            try:
-                os.remove(org[0].replace("package.json", "events.json"))
-            except BaseException:
-                continue
-        else:
-            event_file = org[0].replace("package.json", "events.json")
-            with io.open(event_file, 'w', encoding='utf8') as outfile:
-                str_ = json.dumps(org_event,
-                                  indent=2, sort_keys=True,
-                                  separators=(',', ': '), ensure_ascii=False)
-                outfile.write(to_unicode(str_))
+        wd_event_file(org_event, org)
 
 
 def get_group_files():
