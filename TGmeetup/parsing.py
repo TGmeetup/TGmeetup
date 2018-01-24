@@ -29,6 +29,13 @@ class Parsing():
                              org_event[event_num]["link"]])
         return org_list[0]
 
+    def get_org_event(self, org_file):
+        try:
+            org_event = json.load(open(org_file.replace("package.json", "events.json")))
+        except BaseException:
+            org_event = None
+        return org_event
+
     def get_org_files(self, country):
         mydir = self.get_mydir()
         cmd = "du -a " + mydir + "/community " + mydir + "/conference | grep " + \
@@ -62,14 +69,7 @@ class Parsing():
             org_data = json.load(open(org_file))
             org_event = None
             if org_data["city"] == city:
-                try:
-                    org_event = json.load(
-                        open(
-                            org_file.replace(
-                                "package.json",
-                                "events.json")))
-                except BaseException:
-                    org_event = None
+                org_event = self.get_org_event(org_file)
                 list_all.append(self.listdata(org_data, org_event))
         return list_all
 
@@ -83,14 +83,7 @@ class Parsing():
             if org_data["keywords"]:
                 for k in org_data["keywords"]:
                     if k == keyword:
-                        try:
-                            org_event = json.load(
-                                open(
-                                    org_file.replace(
-                                        "package.json",
-                                        "events.json")))
-                        except BaseException:
-                            org_event = None
+                        org_event = self.get_org_event(org_file)
                         list_all.append(self.listdata(org_data, org_event))
             else:
                 continue
@@ -103,13 +96,6 @@ class Parsing():
         list_all = []
         for org_file in all_org:
             org_data = json.load(open(org_file))
-            try:
-                org_event = json.load(
-                    open(
-                        org_file.replace(
-                            "package.json",
-                            "events.json")))
-            except BaseException:
-                org_event = None
+            org_event = self.get_org_event(org_file)
             list_all.append(self.listdata(org_data, org_event))
         return list_all
