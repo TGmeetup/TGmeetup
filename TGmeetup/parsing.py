@@ -14,6 +14,21 @@ class Parsing():
             mydir = str(output.splitlines())
         return mydir
 
+    def listdata(self, org_data, org_event):
+        org_list = []
+        if org_event is None:
+            org_list.append(
+                [org_data["name"], org_data["title"], org_data["city"]])
+        else:
+            event_num = len(org_event) - 1
+            org_list.append([org_data["name"],
+                             org_data["title"],
+                             org_data["city"],
+                             org_event[event_num]["name"],
+                             org_event[event_num]["local_date"],
+                             org_event[event_num]["link"]])
+        return org_list[0]
+
     def get_org_files(self, country):
         mydir = self.get_mydir()
         cmd = "du -a " + mydir + "/community " + mydir + "/conference | grep " + \
@@ -55,16 +70,7 @@ class Parsing():
                                 "events.json")))
                 except BaseException:
                     org_event = None
-                if org_event is None:
-                    list_all.append(
-                        [org_data["name"], org_data["title"], org_data["city"]])
-                else:
-                    list_all.append([org_data["name"],
-                                     org_data["title"],
-                                     org_data["city"],
-                                     org_event[0]["name"],
-                                     org_event[0]["local_date"],
-                                     org_event[0]["link"]])
+                list_all.append(self.listdata(org_data, org_event))
         return list_all
 
     def show_meetup_via_keyword(self, keyword, country=None):
@@ -85,16 +91,7 @@ class Parsing():
                                         "events.json")))
                         except BaseException:
                             org_event = None
-                        if org_event is None:
-                            list_all.append(
-                                [org_data["name"], org_data["title"], org_data["city"]])
-                        else:
-                            list_all.append([org_data["name"],
-                                             org_data["title"],
-                                             org_data["city"],
-                                             org_event[0]["name"],
-                                             org_event[0]["local_date"],
-                                             org_event[0]["link"]])
+                        list_all.append(self.listdata(org_data, org_event))
             else:
                 continue
         return list_all
@@ -114,14 +111,5 @@ class Parsing():
                             "events.json")))
             except BaseException:
                 org_event = None
-            if org_event is None:
-                list_all.append(
-                    [org_data["name"], org_data["title"], org_data["city"]])
-            else:
-                list_all.append([org_data["name"],
-                                 org_data["title"],
-                                 org_data["city"],
-                                 org_event[0]["name"],
-                                 org_event[0]["local_date"],
-                                 org_event[0]["link"]])
+            list_all.append(self.listdata(org_data, org_event))
         return list_all
