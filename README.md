@@ -47,7 +47,9 @@ $ cd TGmeetup
 $ cp API.cfg.sample API.cfg
 $ make install
 ```
-Note: Please ADD YOUR MEETUP KEY into API.cfg.
+Note: 
+1. Please ADD YOUR MEETUP KEY into API.cfg.
+2. If you can't run `make install`, please run `sh install.sh`.
 
 ## Usage
 ```sh

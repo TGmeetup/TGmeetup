@@ -49,7 +49,9 @@ $ cd TGmeetup
 $ cp API.cfg.sample API.cfg
 $ make install
 ```
-請注意：請到 Meetup API 註冊 OAuth consumer: https://secure.meetup.com/meetup_api/oauth_consumers/create/。這邊為操作說明：https://hackmd.io/s/ByrxYmi4G。
+請注意：
+1. 請到 Meetup API 註冊 OAuth consumer: https://secure.meetup.com/meetup_api/oauth_consumers/create/  。這邊為操作說明： https://hackmd.io/s/ByrxYmi4G 。
+2. 如果您無法執行 `make install`，請執行 `sh install.sh`。
 
 ## Usage
 ```sh
