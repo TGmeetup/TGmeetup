@@ -42,22 +42,24 @@ def add_kktix_event(kktix_orgs):
 # get user home path
 # use absolute path check the files
 # return mydir
+
+
 def get_mydir():
     cmd = "echo $HOME"
     output = subprocess.check_output(cmd, shell=True)
     myhome = str(output.splitlines()).split("'")[1]
-    my_dir = Path(myhome+"/.config/TGmeetup")
+    my_dir = Path(myhome + "/.config/TGmeetup")
     if(my_dir.is_dir()):
         return str(my_dir)
     else:
         return None
 
 
-
 def add_meetup_event(meetup_groups):
     mydir = get_mydir()
-    if mydir == None:
-        print("Please run the steps as the following: \n 1. cionfig API.cfg. \n 2. run 'tgmeetup install'")
+    if mydir is None:
+        print("Please run the steps as the following: \n \
+              1. config API.cfg. \n 2. run 'sh install.sh'")
         pass
     config = configparser.ConfigParser()
     config.read(mydir + '/API.cfg')
@@ -74,8 +76,9 @@ def add_meetup_event(meetup_groups):
 
 def get_group_files():
     mydir = get_mydir()
-    if mydir == None:
-        print("Please run the steps as the following: \n 1. cionfig API.cfg. \n 2. run 'tgmeetup install'")
+    if mydir is None:
+        print("Please run the steps as the following: \n \
+               1. config API.cfg. \n 2. run 'sh install.sh'")
         pass
     cmd = "du -a " + mydir + "/community " + mydir + \
         "/conference | grep package.json | awk '{print $2}'"

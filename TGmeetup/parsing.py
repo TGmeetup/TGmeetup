@@ -2,19 +2,16 @@
 # coding=utf-8
 import subprocess
 import json
-import os
 from pathlib import Path
+
 
 class Parsing():
     def get_mydir(self):
         cmd = "echo $HOME"
         output = subprocess.check_output(cmd, shell=True)
         myhome = str(output.splitlines()).split("'")[1]
-        my_dir = Path(myhome+"/.config/TGmeetup")
+        my_dir = Path(myhome + "/.config/TGmeetup")
         if(my_dir.is_dir()):
-            print(os.path.exists(str(my_dir)+"/API.cfg"))
-            print(os.path.exists(str(my_dir)+"/community/"))
-            print(os.path.exists(str(my_dir)+"/conference/"))
             return str(my_dir)
         else:
             return None
@@ -43,8 +40,10 @@ class Parsing():
 
     def get_org_files(self, country):
         mydir = self.get_mydir()
-        if mydir == None:
-            print("Please run the steps as the following: \n 1. cionfig API.cfg. \n 2. run 'tgmeetup install'")
+        if mydir is None:
+            print(
+                "Please run the steps as the following: \n \
+                 1. config API.cfg. \n 2. run 'sh install.sh'")
             pass
         cmd = "du -a " + mydir + "/community " + mydir + "/conference | grep " + \
             country + " | grep package.json | awk '{print $2}'"
@@ -61,8 +60,10 @@ class Parsing():
         if country is None:
             country = "tw"
         mydir = self.get_mydir()
-        if mydir == None:
-            print("Please run the steps as the following: \n 1. cionfig API.cfg. \n 2. run 'tgmeetup install'")
+        if mydir is None:
+            print(
+                "Please run the steps as the following: \n \
+                1. config API.cfg. \n 2. run 'sh install.sh'")
             pass
         cmd = "du -a " + mydir + "/community " + mydir + "/conference | grep " + \
             country + "/" + name + "/package.json | awk '{print $2}'"
