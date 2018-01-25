@@ -11,6 +11,7 @@ from libs.RegistrationAPI.KKTIX import KKTIX
 from libs.RegistrationAPI.Meetup import Meetup
 from parsing import Parsing
 import io
+from pathlib import Path
 try:
     to_unicode = unicode
 except NameError:
@@ -38,19 +39,26 @@ def add_kktix_event(kktix_orgs):
         org_event = kktix_api.get_meetup_info(org[2])
         wd_event_file(org_event, org)
 
-
+# get user home path
+# use absolute path check the files
+# return mydir
 def get_mydir():
-    cmd = "find ~/ -name TGmeetup | sed -n '1p'"
+    cmd = "echo $HOME"
     output = subprocess.check_output(cmd, shell=True)
-    try:
-        mydir = str(output.splitlines()).split("'")[1]
-    except BaseException:
-        mydir = str(output.splitlines())
-    return mydir
+    myhome = str(output.splitlines()).split("'")[1]
+    my_dir = Path(myhome+"/.config/TGmeetup")
+    if(my_dir.is_dir()):
+        return str(my_dir)
+    else:
+        return None
+
 
 
 def add_meetup_event(meetup_groups):
     mydir = get_mydir()
+    if mydir == None:
+        print("Please run the steps as the following: \n 1. cionfig API.cfg. \n 2. run 'tgmeetup install'")
+        pass
     config = configparser.ConfigParser()
     config.read(mydir + '/API.cfg')
     meetup_api = Meetup(
@@ -66,6 +74,9 @@ def add_meetup_event(meetup_groups):
 
 def get_group_files():
     mydir = get_mydir()
+    if mydir == None:
+        print("Please run the steps as the following: \n 1. cionfig API.cfg. \n 2. run 'tgmeetup install'")
+        pass
     cmd = "du -a " + mydir + "/community " + mydir + \
         "/conference | grep package.json | awk '{print $2}'"
     output = subprocess.check_output(cmd, shell=True)

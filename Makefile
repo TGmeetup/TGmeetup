@@ -16,7 +16,7 @@ clean:
 	@echo "Cleaning up .pyc , .pyo, events.json"
 
 install:
-	sudo python setup.py install
+	sh install.sh
 
 run:
 	tgmeetup

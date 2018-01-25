@@ -2,17 +2,22 @@
 # coding=utf-8
 import subprocess
 import json
-
+import os
+from pathlib import Path
 
 class Parsing():
     def get_mydir(self):
-        cmd = "find ~/ -name TGmeetup | sed -n '1p'"
+        cmd = "echo $HOME"
         output = subprocess.check_output(cmd, shell=True)
-        try:
-            mydir = str(output.splitlines()).split("'")[1]
-        except BaseException:
-            mydir = str(output.splitlines())
-        return mydir
+        myhome = str(output.splitlines()).split("'")[1]
+        my_dir = Path(myhome+"/.config/TGmeetup")
+        if(my_dir.is_dir()):
+            print(os.path.exists(str(my_dir)+"/API.cfg"))
+            print(os.path.exists(str(my_dir)+"/community/"))
+            print(os.path.exists(str(my_dir)+"/conference/"))
+            return str(my_dir)
+        else:
+            return None
 
     def listdata(self, org_data, org_event):
         org_list = []
@@ -38,6 +43,9 @@ class Parsing():
 
     def get_org_files(self, country):
         mydir = self.get_mydir()
+        if mydir == None:
+            print("Please run the steps as the following: \n 1. cionfig API.cfg. \n 2. run 'tgmeetup install'")
+            pass
         cmd = "du -a " + mydir + "/community " + mydir + "/conference | grep " + \
             country + " | grep package.json | awk '{print $2}'"
         organization_file = subprocess.check_output(cmd, shell=True)
@@ -53,6 +61,9 @@ class Parsing():
         if country is None:
             country = "tw"
         mydir = self.get_mydir()
+        if mydir == None:
+            print("Please run the steps as the following: \n 1. cionfig API.cfg. \n 2. run 'tgmeetup install'")
+            pass
         cmd = "du -a " + mydir + "/community " + mydir + "/conference | grep " + \
             country + "/" + name + "/package.json | awk '{print $2}'"
         organization_file = subprocess.check_output(cmd, shell=True)

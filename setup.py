@@ -16,6 +16,6 @@ setup(
   author_email='sufuf3@gmail.com',
   url='https://github.com/sufuf3/TGmeetup',
   keywords=['TechGroup', 'TGmeetup', 'meetup', 'community'],
-  install_requires=["requests", "ConfigParser"],
+  install_requires=["requests", "ConfigParser", "pathlib"],
   entry_points=entry_points,
 )
