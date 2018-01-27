@@ -122,16 +122,20 @@ def print_result(result):
     tableData = []
     tableHead = ["Title", "City", "Link / Meetup / Date"]
     tableData.append(tableHead)
-
     prevTitle = None
     for row in result:
-        name, title, city, *info = row
-        title = colored(title, 'green')
-        city = colored(city, 'cyan')
-        if not info:
+        title = colored(row[1], 'green')
+        city = colored(row[2], 'cyan')
+        try:
+            info = row[3:]
+        except BaseException:
+            info = None
+        if len(info) == 0:
             tableData.append([title, city, ''])
         else:
-            meetup, date, link = info
+            meetup = info[0]
+            date = info[1]
+            link = info[2]
             date = colored(date, 'yellow')
             if title == prevTitle:
                 tableData.append(['', '', date])
