@@ -120,10 +120,11 @@ def update():
 
 def print_result(result):
     tableData = []
-    tableHead = ["Title", "City", "Link / Meetup / Date"]
+    tableHead = ["Title(name)", "City", "Link / Meetup / Date"]
     tableData.append(tableHead)
     prevTitle = None
     for row in result:
+        name = "("+row[0]+")"
         title = colored(row[1], 'green')
         city = colored(row[2], 'cyan')
         try:
@@ -132,6 +133,7 @@ def print_result(result):
             info = None
         if len(info) == 0:
             tableData.append([title, city, ''])
+            tableData.append([name, "", ''])
         else:
             meetup = info[0]
             date = info[1]
@@ -139,11 +141,11 @@ def print_result(result):
             date = colored(date, 'yellow')
             if title == prevTitle:
                 tableData.append(['', '', date])
-                tableData.append(['', '', meetup])
+                tableData.append([name, '', meetup])
                 tableData.append(['', '', link])
             else:
                 tableData.append([title, city, date])
-                tableData.append(['', '', meetup])
+                tableData.append([name, '', meetup])
                 tableData.append(['', '', link])
         prevTitle = title
     print(DoubleTable(tableData).table)
