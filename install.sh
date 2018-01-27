@@ -8,7 +8,7 @@ tgmeetup_path=~/.config/TGmeetup
 if [ ! -e $config_path ] ; then
     mkdir ~/.config
     mkdir ~/.config/TGmeetup
-elif [ ! -e $tgmeetup_path_path ] ; then
+elif [ ! -e $tgmeetup_path ] ; then
     mkdir ~/.config/TGmeetup
 fi
 
