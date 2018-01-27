@@ -12,6 +12,9 @@ from libs.RegistrationAPI.Meetup import Meetup
 from parsing import Parsing
 import io
 from pathlib import Path
+from terminaltables import DoubleTable
+from termcolor import colored
+
 try:
     to_unicode = unicode
 except NameError:
@@ -116,17 +119,30 @@ def update():
 
 
 def print_result(result):
-    print("Name\tTitle\tCity\n")
-    print("\t\tMeetup\tDate\n")
-    print("\t\tLink\n")
-    print("==========================================================\n")
-    for r in result:
-        if len(r) > 3:
-            print(r[0] + "\t" + r[1] + "\t" + r[2] + "\n")
-            print("\t\t\t\t" + r[3] + "\t" + r[4] + "\n")
-            print("\t\t\t\t" + r[5] + "\n")
+    tableData = []
+    tableHead = ["Title", "City", "Link / Meetup / Date"]
+    tableData.append(tableHead)
+
+    prevTitle = None
+    for row in result:
+        name, title, city, *info = row
+        title = colored(title, 'green')
+        city = colored(city, 'cyan')
+        if not info:
+            tableData.append([title, city, ''])
         else:
-            print(r[0] + "\t" + r[1] + "\t" + r[2] + "\n")
+            meetup, date, link = info
+            date = colored(date, 'yellow')
+            if title == prevTitle:
+                tableData.append(['', '', date])
+                tableData.append(['', '', meetup])
+                tableData.append(['', '', link])
+            else:
+                tableData.append([title, city, date])
+                tableData.append(['', '', meetup])
+                tableData.append(['', '', link])
+        prevTitle = title
+    print(DoubleTable(tableData).table)
 
 
 def main():
