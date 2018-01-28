@@ -1,0 +1,23 @@
+{
+  "name": "hcsm",
+  "title": "新竹碼農聚會",
+  "description": "新竹碼農聚會 (Hsinchu Coding Serfs Meeting)",
+  "countrycode": "tw",
+  "city": "Hsinchu",
+  "keywords": [
+    "program",
+    "code"
+  ],
+  "registration": {
+    "type": "kktix",
+    "url": "https://hcsm.kktix.cc/"
+  },
+  "social-media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/groups/hsinchu.coders/"
+      ]
+    }
+  ]
+}

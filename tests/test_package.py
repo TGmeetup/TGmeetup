@@ -65,7 +65,10 @@ class TestFileFormat:
                 for line1, line2 in zip(f1, f2):
                     if line2 != "}":
                         assert line1 == line2, org_file
-        os.remove("tmplate.json")
+        try:
+            os.remove("tmplate.json")
+        except BaseException:
+            pass
 
 
 class TestObjects:
