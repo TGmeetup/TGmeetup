@@ -42,7 +42,7 @@ Thus, TGmeetup project collects the communities' and activities' information thr
 This project uses python3 on Unix-like and MacOS. Go check them out if you don't have them locally installed.
 ```sh
 $ sudo apt install python-setuptools
-$ git clone https://github.com/sufuf3/TGmeetup.git
+$ git clone https://github.com/TGmeetup/TGmeetup.git
 $ cd TGmeetup
 $ cp API.cfg.sample API.cfg
 $ make install

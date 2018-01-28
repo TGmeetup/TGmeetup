@@ -44,7 +44,7 @@
 這專案可執行於 Unix-like 與 MacOS 系統上，並且需要有 python3 的環境。
 ```sh
 $ sudo apt install python-setuptools
-$ git clone https://github.com/sufuf3/TGmeetup.git
+$ git clone https://github.com/TGmeetup/TGmeetup.git
 $ cd TGmeetup
 $ cp API.cfg.sample API.cfg
 $ make install
