@@ -2,15 +2,17 @@
 # coding=utf-8
 
 import os
+import io
 import json
 import argparse
 import configparser
 import subprocess
+
+from .libs.RegistrationAPI.KKTIX import KKTIX
+from .libs.RegistrationAPI.Meetup import Meetup
+from .parsing import Parsing
+
 from threading import Thread
-from libs.RegistrationAPI.KKTIX import KKTIX
-from libs.RegistrationAPI.Meetup import Meetup
-from parsing import Parsing
-import io
 from pathlib import Path
 from terminaltables import DoubleTable
 from termcolor import colored
@@ -124,7 +126,7 @@ def print_result(result):
     tableData.append(tableHead)
     prevTitle = None
     for row in result:
-        name = "("+row[0]+")"
+        name = "(" + row[0] + ")"
         title = colored(row[1], 'green')
         city = colored(row[2], 'cyan')
         try:
@@ -212,7 +214,8 @@ def main():
             update()
             print("Update all the meetup infomation.")
         else:
-            # List all group with event in the country(default country = Taiwan).
+            # List all group with event in the country(default country =
+            # Taiwan).
             result = parsing.list_all_group_in_country(args.country)
             print_result(result)
 
