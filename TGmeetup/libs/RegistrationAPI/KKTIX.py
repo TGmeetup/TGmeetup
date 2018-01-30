@@ -21,6 +21,8 @@ class KKTIX():
                         "%Y-%m-%d", time.localtime()):
                     data = json.load(open(gfile))
                     g = geocoder.google(data["city"])
+                    while g.latlng is None:
+                        g = geocoder.google(data["city"])
                     events_list.append({
                         "name": event["title"],
                         "local_date": event["published"].split("T")[0],
