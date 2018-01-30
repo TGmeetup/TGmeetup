@@ -35,5 +35,10 @@ class Meetup():
                     "local_time": event["local_time"],
                     "location": event["venue"]["name"],
                     "local_city": event["venue"]["city"],
+                    "geocodeFromGroup": "false",
+                    "geocode": {
+                        "lat": event["venue"]["lat"],
+                        "lng": event["venue"]["lon"]
+                    },
                     "link": event["link"]})
             return events_list

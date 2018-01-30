@@ -41,12 +41,8 @@ def wd_event_file(org_event, org):
 def add_kktix_event(kktix_orgs):
     kktix_api = KKTIX()
     for org in kktix_orgs:
-        org_event = kktix_api.get_meetup_info(org[2])
+        org_event = kktix_api.get_meetup_info(org[0], org[2])
         wd_event_file(org_event, org)
-
-# get user home path
-# use absolute path check the files
-# return mydir
 
 
 def get_mydir():
