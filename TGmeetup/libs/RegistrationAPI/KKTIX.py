@@ -39,4 +39,6 @@ class KKTIX():
             if len(events_list) == 0:
                 return None
             else:
+                if len(events_list) > 3:
+                    sorted(events_list, key=lambda k: k['local_date'], reverse=True)
                 return events_list

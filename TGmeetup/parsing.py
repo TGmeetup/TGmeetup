@@ -22,13 +22,12 @@ class Parsing():
             org_list.append(
                 [org_data["name"], org_data["title"], org_data["city"]])
         else:
-            event_num = len(org_event) - 1
             org_list.append([org_data["name"],
                              org_data["title"],
                              org_data["city"],
-                             org_event[event_num]["name"],
-                             org_event[event_num]["local_date"],
-                             org_event[event_num]["link"]])
+                             org_event[0]["name"],
+                             org_event[0]["local_date"],
+                             org_event[0]["link"]])
         return org_list[0]
 
     def get_org_event(self, org_file):

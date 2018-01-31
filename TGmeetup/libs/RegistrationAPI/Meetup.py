@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # coding=utf-8
 import requests
+import datetime
 
 
 class Meetup():
@@ -29,16 +30,21 @@ class Meetup():
             return None
         else:
             for event in events_info:
-                events_list.append({
-                    "name": event["name"],
-                    "local_date": event["local_date"],
-                    "local_time": event["local_time"],
-                    "location": event["venue"]["name"],
-                    "local_city": event["venue"]["city"],
-                    "geocodeFromGroup": "false",
-                    "geocode": {
-                        "lat": event["venue"]["lat"],
-                        "lng": event["venue"]["lon"]
-                    },
-                    "link": event["link"]})
+                if event["local_date"] < datetime.datetime.strftime(
+                        datetime.datetime.now() + datetime.timedelta(days=60),
+                        '%Y-%m-%d'):
+                    events_list.append({
+                        "name": event["name"],
+                        "local_date": event["local_date"],
+                        "local_time": event["local_time"],
+                        "location": event["venue"]["name"],
+                        "local_city": event["venue"]["city"],
+                        "geocodeFromGroup": "false",
+                        "geocode": {
+                            "lat": event["venue"]["lat"],
+                            "lng": event["venue"]["lon"]
+                        },
+                        "link": event["link"]})
+            if len(events_list) > 3:
+                sorted(events_list, key=lambda k: k['local_date'], reverse=True)
             return events_list
