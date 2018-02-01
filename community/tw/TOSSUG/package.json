@@ -1,0 +1,55 @@
+{
+  "name": "TOSSUG",
+  "title": "Taipei Open Source Software User Group (TOSSUG)",
+  "description": "Taipei Open Source Software User Group (TOSSUG, pounced like Catfish in Taiwanese) We are a group of people who live, study or work around Taipei and love to use, promote, or write Free Software or Open Source Software. This group is formed since 2004 and any one shares the same interests is welcome to join our regular meetup on every Tuesday!",
+  "countrycode": "tw",
+  "city": "Taipei",
+  "homepage": "https://tossug.net/",
+  "contact": "tossug@googlegroups.com",
+  "keywords": [
+    "open-source",
+    "software"
+  ],
+  "registration": {
+    "type": "kktix",
+    "url": "https://tossug.kktix.cc/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tossug"
+  },
+  "chat": [
+    {
+      "type": "telegram",
+      "urls": [
+        "https://telegram.me/joinchat/AmWeuTyfn07gdECLSpsRaA"
+      ]
+    },
+    {
+      "type": "google+",
+      "urls": [
+        "https://plus.google.com/communities/115008508939921336314"
+      ]
+    },
+    {
+      "type": "IRC",
+      "urls": [
+        "https://webchat.freenode.net/?channels=tossug"
+      ]
+    }
+  ],
+  "social-media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/groups/tossug/"
+      ]
+    },
+    {
+      "type": "twitter",
+      "urls": [
+        "https://twitter.com/tossug"
+      ]
+    }
+  ]
+}
