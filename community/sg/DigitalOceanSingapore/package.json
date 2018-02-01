@@ -1,0 +1,25 @@
+{
+  "name": "DigitalOceanSingapore",
+  "title": "DigitalOcean Singapore",
+  "description": "Meet software developers of all skill levels to share resources, learn, and form discussions around cloud and DevOps topics including configuration management, containers, databases, monitoring, virtualization, scalability, performance, and more.",
+  "countrycode": "sg",
+  "city": "Singapore",
+  "keywords": [
+    "Open Source",
+    "Software Development",
+    "Cloud Computing",
+    "Virtualization",
+    "PaaS",
+    "SaaS",
+    "Configuration Management",
+    "Computer programming",
+    "Monitoring",
+    "DevOps",
+    "IaaS",
+    "Containers"
+  ],
+  "registration": {
+    "type": "meetup",
+    "url": "https://www.meetup.com/DigitalOceanSingapore/"
+  }
+}
