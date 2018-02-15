@@ -1,0 +1,16 @@
+{
+  "name": "Swift-Taipei-User-Group",
+  "title": "Swift Taipei User Group",
+  "description": "臺北 Swift 程式語言社群",
+  "countrycode": "tw",
+  "city": "Taipei",
+  "homepage": "https://swift.taipei",
+  "keywords": [
+    "Swift",
+    "program"
+  ],
+  "registration": {
+    "type": "meetup",
+    "url": "https://www.meetup.com/Swift-Taipei-User-Group"
+  }
+}
