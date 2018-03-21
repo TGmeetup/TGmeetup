@@ -2,6 +2,7 @@
 
 [![Build Status](https://api.travis-ci.org/TGmeetup/TGmeetup.svg?branch=master)](https://travis-ci.org/TGmeetup/TGmeetup)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/tgmeetup/5)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FTGmeetup%2FTGmeetup.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FTGmeetup%2FTGmeetup?ref=badge_shield)
 
 [中文版](documents/README_zh-tw.md)
 
@@ -99,3 +100,6 @@ To submit PRs to TGmeetup, please refer to [CONTRIBUTING.md](CONTRIBUTING.md). I
 
 ## License
 MIT
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FTGmeetup%2FTGmeetup.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FTGmeetup%2FTGmeetup?ref=badge_large)
