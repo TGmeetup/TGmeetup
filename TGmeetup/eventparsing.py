@@ -7,8 +7,12 @@ import json
 import configparser
 from pathlib import Path
 
-from .libs.RegistrationAPI.KKTIX import KKTIX
-from .libs.RegistrationAPI.Meetup import Meetup
+try:
+    from .libs.RegistrationAPI.KKTIX import KKTIX
+    from .libs.RegistrationAPI.Meetup import Meetup
+except BaseException:
+    from libs.RegistrationAPI.KKTIX import KKTIX
+    from libs.RegistrationAPI.Meetup import Meetup
 
 try:
     to_unicode = unicode
@@ -17,6 +21,7 @@ except NameError:
 
 
 class EventParsing():
+
     def get_mydir(self):
         cmd = "echo $HOME"
         output = subprocess.check_output(cmd, shell=True)
