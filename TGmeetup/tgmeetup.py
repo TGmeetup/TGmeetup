@@ -5,8 +5,12 @@ import json
 import argparse
 import subprocess
 
-from .parsing import Parsing
-from .eventparsing import EventParsing
+try:
+    from .parsing import Parsing
+    from .eventparsing import EventParsing
+except BaseException:
+    from parsing import Parsing
+    from eventparsing import EventParsing
 
 from threading import Thread
 from pathlib import Path

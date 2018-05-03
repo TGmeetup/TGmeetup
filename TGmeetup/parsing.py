@@ -6,6 +6,7 @@ from pathlib import Path
 
 
 class Parsing():
+
     def get_mydir(self):
         cmd = "echo $HOME"
         output = subprocess.check_output(cmd, shell=True)
