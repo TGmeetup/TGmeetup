@@ -2,20 +2,14 @@
 # coding=utf-8
 import subprocess
 import json
-from pathlib import Path
+
+try:
+    from .getpath import GetPath
+except BaseException:
+    from getpath import GetPath
 
 
 class Parsing():
-
-    def get_mydir(self):
-        cmd = "echo $HOME"
-        output = subprocess.check_output(cmd, shell=True)
-        myhome = str(output.splitlines()).split("'")[1]
-        my_dir = Path(myhome + "/.config/TGmeetup")
-        if(my_dir.is_dir()):
-            return str(my_dir)
-        else:
-            return None
 
     def listdata(self, org_data, org_event):
         org_list = []
@@ -39,7 +33,8 @@ class Parsing():
         return org_event
 
     def get_org_files(self, country):
-        mydir = self.get_mydir()
+        getpath = GetPath()
+        mydir = getpath.get_mydir()
         if mydir is None:
             print(
                 "Please run the steps as the following: \n \
@@ -59,7 +54,8 @@ class Parsing():
     def show_organization_info(self, name, country=None):
         if country is None:
             country = "tw"
-        mydir = self.get_mydir()
+        getpath = GetPath()
+        mydir = getpath.get_mydir()
         if mydir is None:
             print(
                 "Please run the steps as the following: \n \

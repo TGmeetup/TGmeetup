@@ -2,17 +2,18 @@
 # coding=utf-8
 import io
 import os
-import subprocess
 import json
 import configparser
-from pathlib import Path
 
 try:
     from .libs.RegistrationAPI.KKTIX import KKTIX
     from .libs.RegistrationAPI.Meetup import Meetup
+    from .getpath import GetPath
 except BaseException:
     from libs.RegistrationAPI.KKTIX import KKTIX
     from libs.RegistrationAPI.Meetup import Meetup
+    from getpath import GetPath
+
 
 try:
     to_unicode = unicode
@@ -21,16 +22,6 @@ except NameError:
 
 
 class EventParsing():
-
-    def get_mydir(self):
-        cmd = "echo $HOME"
-        output = subprocess.check_output(cmd, shell=True)
-        myhome = str(output.splitlines()).split("'")[1]
-        my_dir = Path(myhome + "/.config/TGmeetup")
-        if(my_dir.is_dir()):
-            return str(my_dir)
-        else:
-            return None
 
     def wd_event_file(self, org_event, org):
         if org_event is None:
@@ -53,7 +44,8 @@ class EventParsing():
             self.wd_event_file(org_event, org)
 
     def add_meetup_event(self, meetup_groups):
-        mydir = self.get_mydir()
+        getpath = GetPath()
+        mydir = getpath.get_mydir()
         if mydir is None:
             print("Please run the steps as the following: \n \
                   1. config API.cfg. \n 2. run 'sh install.sh'")

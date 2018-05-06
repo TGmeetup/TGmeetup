@@ -8,12 +8,13 @@ import subprocess
 try:
     from .parsing import Parsing
     from .eventparsing import EventParsing
+    from .getpath import GetPath
 except BaseException:
     from parsing import Parsing
     from eventparsing import EventParsing
+    from getpath import GetPath
 
 from threading import Thread
-from pathlib import Path
 from terminaltables import DoubleTable
 from termcolor import colored
 
@@ -23,19 +24,9 @@ except NameError:
     to_unicode = str
 
 
-def get_mydir():
-    cmd = "echo $HOME"
-    output = subprocess.check_output(cmd, shell=True)
-    myhome = str(output.splitlines()).split("'")[1]
-    my_dir = Path(myhome + "/.config/TGmeetup")
-    if(my_dir.is_dir()):
-        return str(my_dir)
-    else:
-        return None
-
-
 def get_group_files():
-    mydir = get_mydir()
+    getpath = GetPath()
+    mydir = getpath.get_mydir()
     if mydir is None:
         print("Please run the steps as the following: \n \
                1. config API.cfg. \n 2. run 'sh install.sh'")
