@@ -1,0 +1,51 @@
+{
+  "name": "Mobile / Open / Platform CONference",
+  "title": "MOPCON 行動科技年會",
+  "description": "MOPCON 為濁水溪以南最強大行動科技研討會",
+  "countrycode": "tw",
+  "city": "Kaohsiung",
+  "homepage": "https://mopcon.org",
+  "contact": "contact@mopcon.org",
+  "keywords": [
+    "南部",
+    "濁水溪以南",
+    "mobile",
+    "iot"
+  ],
+  "registration": {
+    "type": "kktix",
+    "url": "https://mopcon.kktix.cc/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mopcon"
+  },
+  "chat": [
+    {
+      "type": "gitter",
+      "urls": [
+        "https://gitter.im/MOPCON/mopcon-chat"
+      ]
+    }
+  ],
+  "social-media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/mopcon/"
+      ]
+    },
+    {
+      "type": "twitter",
+      "urls": [
+        "https://twitter.com/mopcon"
+      ]
+    },
+    {
+      "type": "youtube",
+      "url": [
+        "https://www.youtube.com/user/MOPCON2014"
+      ]
+    }
+  ]
+}

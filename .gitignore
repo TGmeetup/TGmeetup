@@ -99,4 +99,7 @@ venv3/
 # Rope project settings
 .ropeproject
 
+# Config File
+API.cfg
+
 # End of https://www.gitignore.io/api/python
