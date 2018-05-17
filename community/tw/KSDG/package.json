@@ -1,0 +1,31 @@
+{
+  "name": "KSDG",
+  "title": "Kaohsiung Software Developer Group",
+  "description": "高雄從事軟體開發、網路技術開發者一起交流的園地，2012首次聚會活動，每 1~2 個月舉辦實體 meet-up、app/web course聚會活動，從開源軟體、架構設計、Deisgn Pattern等任何與開發相關議題皆可分享探討，歡迎對軟體開發技術有興趣的朋友可以參與聚會。",
+  "countrycode": "tw",
+  "city": "Kaohsiung",
+  "homepage": "https://www.facebook.com/KSDGr/",
+  "contact": "contact@ksdg.me",
+  "keywords": [
+    "南部",
+    "高雄",
+    "軟體工程師",
+    "Developer"
+  ],
+  "registration": {
+    "type": "kktix",
+    "url": "https://ksdg.kktix.cc/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KSDG"
+  },
+  "social-media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/groups/KSDGroup/"
+      ]
+    }
+  ]
+}
