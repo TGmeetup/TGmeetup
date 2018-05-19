@@ -94,7 +94,7 @@ Using `pytest`.
 Thanks to these contributors, you can see them all here: https://github.com/TGmeetup/TGmeetup/graphs/contributors
 
 ## Contribute
-Feel free to dive in! [Open an issue](https://github.com/RichardLitt/standard-readme/issues/new) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/TGmeetup/TGmeetup/issues/new) or submit PRs.
 To submit PRs to TGmeetup, please refer to [CONTRIBUTING.md](CONTRIBUTING.md). It should contain most of the things you'll need to get your contribution started!
 
 
