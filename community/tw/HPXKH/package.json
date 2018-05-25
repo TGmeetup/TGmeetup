@@ -1,0 +1,31 @@
+{
+  "name": "HPXKH",
+  "title": "HPX 高雄讀書會",
+  "description": "HPXKH 是 HPX 的高雄讀書會，提供高雄愛書的朋友們一個呼朋引伴的環境。任何社員都可以在這裡舉辦讀書聚會，開啟多元化主題的交流，舉凡產品、服務、行銷、設計、人類、心理、哲學、社會、商業、管理、技術、科技、創業。後續透過輕鬆聚或大聚互相分享彼此的心得，以書會友，共同成長。",
+  "countrycode": "tw",
+  "city": "Kaohsiung",
+  "contact": "hpxkhbc@gmail.com",
+  "keywords": [
+    "高雄",
+    "讀書會",
+    "使用者經驗",
+    "設計",
+    "心理學",
+    "哲學",
+    "創業",
+    "網站",
+    "app"
+  ],
+  "registration": {
+    "type": "kktix",
+    "url": "https://hpxkh.kktix.cc/"
+  },
+  "social-media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/groups/KaohsiungHPX/"
+      ]
+    }
+  ]
+}
