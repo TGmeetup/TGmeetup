@@ -22,6 +22,7 @@
     - [Tests](#tests)
 - [Contributors](#contributors)
 - [Contribute](#contribute)
+- [Communication](#communication)
 - [License](#license)
 
 
@@ -97,6 +98,10 @@ autopep8 --in-place --aggressive --max-line-length=88 <filename>
 ## Contribute
 歡迎您隨意[開 issue](https://github.com/RichardLitt/standard-readme/issues/new) 或送 PR 唷！
 若您想要送 PR 到 TGmeetup ，請您先看看 [CONTRIBUTING.md](CONTRIBUTING_zh-tw.md)。這些內容可以幫助您更快了解如何貢獻本專案。謝謝您的加入！
+
+## Communication
+- [TGmeetup 網站](https://tgmeetup.github.io/)
+- [Telegram 群](https://t.me/joinchat/FLvXBBBoNUbUpCDt3k9XRQ)
 
 ## License
 MIT

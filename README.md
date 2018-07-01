@@ -23,6 +23,7 @@ This is a collection set of technical groups' meetup. Collect the technical meet
     - [Tests](#tests)
 - [Contributors](#contributors)
 - [Contribute](#contribute)
+- [Communication](#communication)
 - [License](#license)
 
 
@@ -97,6 +98,9 @@ Thanks to these contributors, you can see them all here: https://github.com/TGme
 Feel free to dive in! [Open an issue](https://github.com/TGmeetup/TGmeetup/issues/new) or submit PRs.
 To submit PRs to TGmeetup, please refer to [CONTRIBUTING.md](CONTRIBUTING.md). It should contain most of the things you'll need to get your contribution started!
 
+## Communication
+- [TGmeetup website](https://tgmeetup.github.io/)
+- [Community/Developer Telegram Group](https://t.me/joinchat/FLvXBBBoNUbUpCDt3k9XRQ)
 
 ## License
 MIT
