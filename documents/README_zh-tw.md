@@ -101,7 +101,7 @@ autopep8 --in-place --aggressive --max-line-length=88 <filename>
 
 ## Communication
 - [TGmeetup 網站](https://tgmeetup.github.io/)
-- [Telegram 群](https://t.me/joinchat/FLvXBBBoNUbUpCDt3k9XRQ)
+- [Telegram 群](https://t.me/tgmeetup)
 
 ## License
 MIT
