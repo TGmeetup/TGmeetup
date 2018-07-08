@@ -1,0 +1,51 @@
+{
+  "name": "golangtw",
+  "title": "Golang Taiwan",
+  "description": "交流Go程式語言的地方 ，聚會資訊與相關的投影片與影片鏈結在(http://Golang.tw)",
+  "countrycode": "tw",
+  "city": "Taipei",
+  "keywords": [
+    "open source",
+    "golang",
+    "go",
+    "Gophers"
+  ],
+  "contributors": "Golang Taiwan organizers",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/golangtw"
+  },
+  "registration": {
+    "type": "kktix",
+    "url": "https://golang.kktix.cc/"
+  },
+  "chat": [
+    {
+      "type": "telegram",
+      "urls": [
+        "https://t.me/golangtw"
+      ]
+    },
+    {
+      "type": "slack",
+      "urls": [
+        "https://golangtw-slackin.herokuapp.com/"
+      ]
+    }
+  ],
+  "social-media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/golangtaipei/",
+        "https://www.facebook.com/groups/269001993248363/"
+      ]
+    },
+    {
+      "type": "twitter",
+      "urls": [
+        "https://twitter.com/golangtw"
+      ]
+    }
+  ]
+}
