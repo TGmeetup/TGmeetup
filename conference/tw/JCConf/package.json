@@ -1,0 +1,28 @@
+{
+  "name": "JCConf",
+  "title": "Java Community Conference Taiwan",
+  "description": " Java Community Conference Taiwan 是由社群主辦的 Java 開發者年會，以提供更多機會讓開發人員之間能夠互相交流。",
+  "countrycode": "tw",
+  "city": "Taipei",
+  "homepage": "https://jcconf.tw",
+  "contact": "program@jcconf.tw",
+  "keywords": [
+    "Java",
+    "TWJUG",
+    "developer"
+  ],
+  "contributors": "Java Community Conference Taiwan organizers",
+  "registration": {
+    "type": "kktix",
+    "url": "https://twjug.kktix.cc/"
+  },
+  "social-media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/groups/twjug",
+        "https://www.facebook.com/jcconf"
+      ]
+    }
+  ]
+}
