@@ -1,0 +1,22 @@
+{
+  "name": "GopherChina",
+  "title": "GopherChina",
+  "description": "GopherChina is the most influential conference among Golang fans in China.",
+  "countrycode": "cn",
+  "city": "china",
+  "homepage": "https://gopherchina.org/",
+  "keywords": [
+    "go",
+    "golang",
+    "Gopher"
+  ],
+  "contributors": "Show the maintainors or organizers of the community",
+  "registration": {
+    "type": "bagevent",
+    "url": "https://gopherchina.org/#tickets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gopherchina"
+  }
+}
