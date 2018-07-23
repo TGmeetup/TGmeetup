@@ -1,0 +1,25 @@
+{
+  "name": "agile.kaohsiung",
+  "title": "Agile Kaohsiung",
+  "description": "高雄敏捷 (Agile Kaohsiung) 是由一群對 Agile 敏捷有興趣的夥伴所組成，期待藉由Agile 經驗分享和交流，改變高雄與台灣產業文化",
+  "countrycode": "tw",
+  "city": "Kaohsiung",
+  "contact": "agile.kaohsiung@gmail.com",
+  "keywords": [
+    "高雄",
+    "南部",
+    "敏捷"
+  ],
+  "registration": {
+    "type": "kktix",
+    "url": "https://agilekaohsiung.kktix.cc/"
+  },
+  "social-media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/agile.kaohsiung/"
+      ]
+    }
+  ]
+}
