@@ -1,0 +1,32 @@
+{
+  "name": "elixirTW",
+  "title": "Elixir Taiwan @ Taipei",
+  "description": "We are a handful of elixir enthusiast based in greater Taipei area, come geek out with us !",
+  "countrycode": "tw",
+  "city": "Taipei",
+  "keywords": [
+    "elixir",
+    "language",
+    "Technology",
+    "Web Development",
+    "Computer programming",
+    "Engineering",
+    "Information Technology"
+  ],
+  "registration": {
+    "type": "meetup",
+    "url": "https://www.meetup.com/elixirtw-taipei/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elixirtw"
+  },
+  "social-media": [
+    {
+      "type": "twitter",
+      "urls": [
+        "https://twitter.com/elixirtw"
+      ]
+    }
+  ]
+}
