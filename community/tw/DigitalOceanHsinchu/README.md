@@ -1,0 +1,18 @@
+- name: DigitalOceanHsinchu
+- title: 'DigitalOcean Hsinchu'
+- description: 'We are a new local technology meetup group located at Hsinchu city, organized by students in NCTU(National Chiao Tung University) and DigitalOcean! We are interested in various open source, Linux, cloud computing, DevOps, web development and network related techs and tools, and would like to study, share the knowledge with you together, welcome to join us, share your experience and suggestion, organize the future meetup and topic with us!'
+- countrycode: tw
+- city: Hsinchu
+- keywords:
+    - 'open source'
+    - cloud
+    - DevOps
+    - container
+- contributors: 'DigitalOcean Hsinchu organizers'
+- registration:
+   - type: meetup
+   - url: 'https://www.meetup.com/DigitalOceanHsinchu/'
+- chat:
+    - {type: slack, urls: ['https://digitaloceanhsinchuslack.herokuapp.com/', 'https://digitaloceanhsinchu.slack.com']}
+- social-media:
+    - {type: facebook, urls: ['https://www.facebook.com/DigitalOceanHsinchu/', 'https://www.facebook.com/groups/DigitalOceanHsinchu/']}
