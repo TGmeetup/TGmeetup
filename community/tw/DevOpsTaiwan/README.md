@@ -1,0 +1,15 @@
+- name: DevOpsTaiwan
+- title: 'DevOps Taiwan'
+- description: 'DevOps Taiwan 社群成立于 2015/5/21，由多位關注 DevOps 相關資訊的 IT、軟體界朋友一起共同創立，期望透過社群互動的方式建立一個平台提供台灣的社群朋友可以一起針對 DevOps 相關的議題、專案、技術與工作進行分享與交流。社群目前主要活動於 Facebook 社團'
+- countrycode: tw
+- city: Taipei
+- homepage: 'https://devopstw.club/'
+- keywords:
+    - DevOps
+- registration:
+   - type: kktix
+   - url: 'https://devops.kktix.cc/'
+- chat:
+    - {type: gitter, urls: ['https://gitter.im/DevOpsTW/chat']}
+- social-media:
+    - {type: facebook, urls: ['https://www.facebook.com/DevOpsTaiwan/', 'https://www.facebook.com/groups/DevOpsTaiwan/']}

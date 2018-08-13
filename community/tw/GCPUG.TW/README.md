@@ -1,0 +1,20 @@
+- name: GCPUG.TW
+- title: 'GCPUG Taiwan'
+- description: Google雲端服務在台灣地區展露頭角，有許多新的服務、新的知識、新的創意，歡迎大家一起分享，一起了解Google雲端服務
+- countrycode: tw
+- city: Taipei
+- homepage: 'http://gcpug.tw/'
+- contact: gcpug.tw@gmail.com
+- keywords:
+    - 'Google Cloud'
+    - gcp
+- registration:
+   - type: kktix
+   - url: 'https://gcpugtw.kktix.cc/'
+- repository:
+   - type: git
+   - url: 'https://github.com/gcpug-tw'
+- social-media:
+    - {type: facebook, urls: ['https://www.facebook.com/groups/GCPUG.TW']}
+    - {type: google-plus, urls: ['https://plus.google.com/u/0/communities/116100913832589966421']}
+    - {type: youtube, url: ['https://www.youtube.com/channel/UChsSyJ6twixb5yiGfS1bo3g']}
