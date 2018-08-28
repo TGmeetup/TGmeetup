@@ -101,6 +101,7 @@ To submit PRs to TGmeetup, please refer to [CONTRIBUTING.md](CONTRIBUTING.md). I
 ## Communication
 - [TGmeetup website](https://tgmeetup.github.io/)
 - [Community/Developer Telegram Group](https://t.me/tgmeetup)
+- [HelloGitHub vol‧29](https://hellogithub.com/periodical/volume/29/#TGmeetup)
 
 ## License
 MIT
