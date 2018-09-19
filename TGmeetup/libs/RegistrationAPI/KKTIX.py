@@ -3,7 +3,7 @@
 import requests
 import time
 import json
-import geocoder
+from geopy.geocoders import Nominatim
 
 
 class KKTIX():
@@ -20,18 +20,25 @@ class KKTIX():
                 if event["published"].split("T")[0] > time.strftime(
                         "%Y-%m-%d", time.localtime()):
                     data = json.load(open(gfile))
-                    g = geocoder.google(data["city"])
-                    while g.latlng is None:
-                        g = geocoder.google(data["city"])
+                    geolocator = Nominatim(user_agent="TGmeetup")
+                    try:
+                        g = geolocator.geocode(data["city"])
+                        while g.latitude is None:
+                            g = geolocator.geocode(data["city"])
+                    except BaseException:
+                        g = geolocator.geocode(data["city"])
+                        while g.latitude is None:
+                            g = geolocator.geocode(data["city"])
                     events_list.append({
                         "name": event["title"],
                         "local_date": event["published"].split("T")[0],
                         "local_time": event["published"].split("T")[1].split(".")[0],
+                        "location": event["content"].split("：")[2],
                         "local_city": data["city"],
                         "geocodeFromGroup": "true",
                         "geocode": {
-                            "lat": g.latlng[0],
-                            "lng": g.latlng[1]
+                            "lat": g.latitude,
+                            "lng": g.longitude
                         },
                         "link": event["url"]})
                 else:
