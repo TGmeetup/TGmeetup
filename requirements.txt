@@ -5,4 +5,4 @@ flake8
 pep8
 terminaltables==3.1.0
 termcolor==1.1.0
-geocoder==1.35.0
+geopy==1.17.0
