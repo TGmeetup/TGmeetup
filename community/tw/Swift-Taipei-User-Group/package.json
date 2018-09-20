@@ -13,5 +13,7 @@
   "registration": {
     "type": "meetup",
     "url": "https://www.meetup.com/Swift-Taipei-User-Group"
-  }
+  },
+  "color": "#f0523a",
+  "logoURL": "https://developer.apple.com/assets/elements/icons/swift/swift-64x64.png"
 }
