@@ -2,6 +2,7 @@
   "name": "golangtw",
   "title": "Golang Taiwan",
   "description": "交流Go程式語言的地方 ，聚會資訊與相關的投影片與影片鏈結在(http://Golang.tw)",
+  "category": "community",
   "countrycode": "tw",
   "city": "Taipei",
   "keywords": [

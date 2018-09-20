@@ -2,6 +2,7 @@
   "name": "HITCON",
   "title": "Hacks In Taiwan Conference",
   "description": "Hacks In Taiwan Conference (HITCON) 台灣駭客年會是台灣最大的駭客與資安技術研討會，是駭客們的聚會，駭客們一年一度的 Party。我們歡迎所有對資訊安全有興趣的朋友一同參與這每年一度的盛會。",
+  "category": "conference",
   "countrycode": "tw",
   "city": "Taipei",
   "homepage": "https://hitcon.org",

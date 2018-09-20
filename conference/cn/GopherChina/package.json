@@ -2,6 +2,7 @@
   "name": "GopherChina",
   "title": "GopherChina",
   "description": "GopherChina is the most influential conference among Golang fans in China.",
+  "category": "conference",
   "countrycode": "cn",
   "city": "china",
   "homepage": "https://gopherchina.org/",

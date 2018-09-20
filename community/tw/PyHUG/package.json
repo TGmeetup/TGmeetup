@@ -2,6 +2,7 @@
   "name": "PyHUG",
   "title": "Python Hsinchu User Group",
   "description": "Welcome to PyHUG! We are a group of Python programmers near the Hsinchu, Taiwan. We regularly hold seminar and coding meetings. You are very welcomed to join us! You can also find us online at Freenode/#python.tw IRC room and https://groups.google.com/d/forum/pythontw Google group.",
+  "category": "community",
   "countrycode": "tw",
   "city": "Hsinchu",
   "keywords": [

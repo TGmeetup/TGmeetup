@@ -2,6 +2,7 @@
   "name": "SITCON",
   "title": "SITCON",
   "description": "SITCON 學生計算機年會（Students' Information Technology Conference）是自 2013 年由一群學生自主性地發起，是一個以在學學生為主體的學生社群。以自發性的學習為基礎，秉持 open source、創新與實作的理念。",
+  "category": "conference",
   "countrycode": "tw",
   "city": "Taipei",
   "homepage": "http://sitcon.org/",
