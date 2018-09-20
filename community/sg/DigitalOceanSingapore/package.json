@@ -2,6 +2,7 @@
   "name": "DigitalOceanSingapore",
   "title": "DigitalOcean Singapore",
   "description": "Meet software developers of all skill levels to share resources, learn, and form discussions around cloud and DevOps topics including configuration management, containers, databases, monitoring, virtualization, scalability, performance, and more.",
+  "category": "community",
   "countrycode": "sg",
   "city": "Singapore",
   "keywords": [

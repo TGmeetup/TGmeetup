@@ -2,6 +2,7 @@
   "name": "Taipei-HashiCorp-User-Group",
   "title": "Taipei HashiCorp User Group",
   "description": "This group is a place to meet other developers and ops engineers using HashiCorp tools! HashiCorp enables organizations to provision, secure, and run any infrastructure for any application. DevOps engineers use the HashiCorp product suite of Vagrant, Packer, Terraform, Vault, Nomad, and Consul on a daily basis. We want to get these people together to share experiences.",
+  "category": "community",
   "countrycode": "tw",
   "city": "Taipei",
   "keywords": [
