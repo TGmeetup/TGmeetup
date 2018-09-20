@@ -5,6 +5,8 @@
   "category": "conference",
   "countrycode": "tw",
   "city": "Taipei",
+  "logo": "https://t.kfs.io/upload_images/38767/1548022_657296674389178_2299288881801914666_o_promote.png",
+  "color": "#fd0042",
   "homepage": "https://tw.pycon.org/",
   "keywords": [
     "open source",

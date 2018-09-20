@@ -5,6 +5,8 @@
   "category": "conference",
   "countrycode": "tw",
   "city": "Taipei",
+  "logo": "https://t.kfs.io/upload_images/34020/hitcon2012-social-logo_512x512_promote.png",
+  "color": "#282425",
   "homepage": "https://hitcon.org",
   "contact": "ticket@hitcon.org",
   "keywords": [

@@ -5,6 +5,8 @@
   "category": "community",
   "countrycode": "tw",
   "city": "Taipei",
+  "logo": "https://developer.apple.com/assets/elements/icons/swift/swift-64x64.png",
+  "color": "#FF7B2A",
   "homepage": "https://swift.taipei",
   "keywords": [
     "Swift",

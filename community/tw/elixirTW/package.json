@@ -5,6 +5,8 @@
   "category": "community",
   "countrycode": "tw",
   "city": "Taipei",
+  "logo": "https://secure.meetupstatic.com/photos/event/8/a/0/c/global_461075340.jpeg",
+  "color": "#550062",
   "keywords": [
     "elixir",
     "language",

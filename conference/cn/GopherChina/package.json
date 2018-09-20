@@ -5,6 +5,8 @@
   "category": "conference",
   "countrycode": "cn",
   "city": "china",
+  "logo": "https://gopherchina.org/assets/gopthercn.png",
+  "color": "#442b81",
   "homepage": "https://gopherchina.org/",
   "keywords": [
     "go",

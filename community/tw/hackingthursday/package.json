@@ -6,6 +6,8 @@
   "countrycode": "tw",
   "city": "Taipei",
   "homepage": "http://www.hackingthursday.org/",
+  "logo": "https://secure.meetupstatic.com/photos/event/6/0/0/global_440341536.jpeg",
+  "color": "#C99956",
   "keywords": [
     "engineering",
     "hackers"
