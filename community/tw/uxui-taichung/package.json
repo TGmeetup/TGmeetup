@@ -5,8 +5,6 @@
   "category": "community",
   "countrycode": "tw",
   "city": "Taichung",
-  "logo": "https://t.kfs.io/upload_images/71300/UXUI____LOGO_promote.png",
-  "color": "#de0048",
   "keywords": [
     "UI",
     "UX",
@@ -15,5 +13,7 @@
   "registration": {
     "type": "kktix",
     "url": "https://uxui-taichung.kktix.cc/"
-  }
+  },
+  "color": "#cf114a",
+  "logoURL": "https://t.kfs.io/upload_images/71300/UXUI____LOGO_promote.png"
 }

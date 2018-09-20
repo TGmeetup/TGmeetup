@@ -5,8 +5,6 @@
   "category": "community",
   "countrycode": "tw",
   "city": "Taipei",
-  "logo": "https://secure.meetupstatic.com/photos/member/c/d/5/d/member_261712573.jpeg",
-  "color": "#0c0f19",
   "keywords": [
     "cloud",
     "DevOps"
@@ -22,5 +20,7 @@
         "https://www.facebook.com/groups/113425279448910/"
       ]
     }
-  ]
+  ],
+  "color": "#ffffff",
+  "logoURL": "https://secure.meetupstatic.com/photos/member/c/d/5/d/member_261712573.jpeg"
 }

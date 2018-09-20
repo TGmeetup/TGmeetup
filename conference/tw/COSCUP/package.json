@@ -6,8 +6,6 @@
   "countrycode": "tw",
   "city": "Taipei",
   "homepage": "https://coscup.org",
-  "logo": "https://t.kfs.io/upload_images/75646/150329150418_coscup-logo-512_promote_promote_promote.png",
-  "color": "#00a730",
   "keywords": [
     "open-source",
     "coder"
@@ -41,5 +39,7 @@
         "https://twitter.com/coscup"
       ]
     }
-  ]
+  ],
+  "color": "#438034",
+  "logoURL": "https://t.kfs.io/upload_images/75646/150329150418_coscup-logo-512_promote_promote_promote.png"
 }

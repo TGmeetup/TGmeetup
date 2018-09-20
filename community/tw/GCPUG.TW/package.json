@@ -7,8 +7,6 @@
   "city": "Taipei",
   "homepage": "http://gcpug.tw/",
   "contact": "gcpug.tw@gmail.com",
-  "logo": "https://t.kfs.io/upload_images/39944/GCPUG-2_promote.png",
-  "color": "#FBD200",
   "keywords": [
     "Google Cloud",
     "gcp"
@@ -40,5 +38,7 @@
         "https://www.youtube.com/channel/UChsSyJ6twixb5yiGfS1bo3g"
       ]
     }
-  ]
+  ],
+  "color": "#d34836",
+  "logoURL": "https://t.kfs.io/upload_images/39944/GCPUG-2_promote.png"
 }

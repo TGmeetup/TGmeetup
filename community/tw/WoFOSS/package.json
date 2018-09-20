@@ -5,8 +5,6 @@
   "category": "community",
   "countrycode": "tw",
   "city": "Taipei",
-  "logo": "https://t.kfs.io/upload_images/32640/logo-wofoss-640-old_promote.png",
-  "color": "#00eac8",
   "homepage": "http://www.wofoss.org/",
   "keywords": [
     "girl",
@@ -25,5 +23,7 @@
         "https://www.facebook.com/groups/wofoss"
       ]
     }
-  ]
+  ],
+  "color": "#cf599a",
+  "logoURL": "https://t.kfs.io/upload_images/32640/logo-wofoss-640-old_promote.png"
 }
