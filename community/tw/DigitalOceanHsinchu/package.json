@@ -33,5 +33,7 @@
         "https://www.facebook.com/groups/DigitalOceanHsinchu/"
       ]
     }
-  ]
+  ],
+  "color": "#0080FF",
+  "logoURL": "https://www.digitalocean.com/apple-touch-icon.png"
 }

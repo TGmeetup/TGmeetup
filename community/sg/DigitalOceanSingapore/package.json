@@ -22,5 +22,7 @@
   "registration": {
     "type": "meetup",
     "url": "https://www.meetup.com/DigitalOceanSingapore/"
-  }
+  },
+  "color": "#0080FF",
+  "logoURL": "https://www.digitalocean.com/apple-touch-icon.png"
 }
