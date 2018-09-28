@@ -88,6 +88,7 @@ Bug 回報指南：
       - `name`: 必要欄位(object)，值(value)為一個字串，該字串的名稱需和該目錄資料夾同名，且為一個英文單字，建議為該社群的縮寫，或是活動報名 URL 的社群名。
       - `title`: 必要欄位(object)，值(value)為字串，該字串為該社群真正的名字，中間可以有空白。
       - `countrycode`: 必要欄位(object)，值(value)為字串，該 country code 須遵循 ISO 3166-1 alpha-2 的規範。
+      - `category`: 必要欄位(object)，值(value)為字串，為 **community** 或 **conference**。
       - `city`: 必要欄位(object)，值(value)為字串，為城市的欄位。
       - `keywords`: 必要欄位(object)，值(value)為 List ，為搜尋的關鍵字，只要是與該技術社群相關的關鍵字，都可以放到這裡。請使用一個字一行，方便閱讀。
       - `registration`: 必要欄位(object)，值(value)為 Dictionary 。當中包含兩種key：
@@ -100,6 +101,8 @@ Bug 回報指南：
       - `repository`: 非必要欄位(object)，值(value)為一個 Dictionary，為該社群的 Git repository，例如： GitHub 的 organization 主要連結。
       - `chat`: 非必要欄位(object)，值(value)為 List ，為該社群討論的平台連結。
       - `social-media`: 非必要欄位(object)，值(value)為 List ，為該技術社群的社群媒體連結。
+      - `color`: 非必要欄位(object)，值(value)一個字串 ，為該技術社群的代表 Hex 色碼。
+      - `logoURL`: 非必要欄位(object)，值(value)一個字串 ，為該技術社群的 logo URL。若上傳 logo 請放在同個社群目錄底下，並填上該圖片的檔名。
 5. 編輯完畢後，請將該檔案存檔。依據 GitHub Flow 進行貢獻。 commit message 請參考以下範例描述。  
 註一：`<>`請於您編輯該 commit message 的時候移除  
 註二：`<group type>` = `community` 或 `conference`  
