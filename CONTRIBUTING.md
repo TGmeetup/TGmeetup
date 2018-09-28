@@ -86,6 +86,7 @@ Please read [package.json.sample](documents/package.json.sample) which is a samp
    - These are keys introduction:
       - `name`: A necessary object. It's a string. This value should be the same as the folder name, also should be an English word. Using the abbreviation of the technical group or the registration URL of the group is a suggestion.
       - `title`: A necessary object. It's a string. Put the whole name of the technical group.
+      - `category`: A necessary object. It's a string. Put **community** or **conference** in it.
       - `countrycode`: A necessary object. It's a string. The country code should be followed the rule of ISO 3166-1 alpha-2.
       - `city`: A necessary object with a string value. The value is a city name.
       - `keywords`: A necessary object. Put keywords in it. It's an array of strings. This helps people discover the technical group.
@@ -100,6 +101,8 @@ Please read [package.json.sample](documents/package.json.sample) which is a samp
       - `repository`: A non-necessary object. It's a dictionary. Specify the place where your code lives. This is helpful for people who want to contribute. The URL should be a publicly available url that can be handed directly to a VCS program without any modification. 
       - `chat`: A non-necessary object. It's a list. This is a chatroom platform of the technical group.
       - `social-media`: A non-necessary object. It's a list. Put the social media link in it.
+      - `color`: A non-necessary object. It's a string. Put the Hex color code in it.
+      - `logoURL`: A non-necessary object. It's a string. Put the logo URL in it.
 5. After finish it, please save the file. According to the contribution process of GitHub Flow. Please follow the commit message as the following.
 Note 1: Please remove `<>` when you edit the commit message.
 Note 2: `<group type>` = `community` or `conference`

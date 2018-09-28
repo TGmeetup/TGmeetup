@@ -2,6 +2,7 @@
   "name": "community short name",
   "title": "community name",
   "description": "About community information",
+  "category": "community or conference",
   "countrycode": "Follow ISO 3166-1 alpha-2",
   "city": "city name",
   "homepage": "homepage link",
@@ -41,5 +42,7 @@
         "https://twitter.com/name"
       ]
     }
-  ]
+  ],
+  "color": "#000000",
+  "logoURL": "https://www.digitalocean.com/apple-touch-icon.png"
 }
