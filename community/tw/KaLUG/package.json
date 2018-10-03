@@ -1,0 +1,40 @@
+{
+  "name": "KaLUG",
+  "title": "Kaohsiung Linux User Group",
+  "description": "KaLUG 是由一群熱愛 Open Source 的 朋友 所組成的團體. 歡迎參加我們的 聚會 ，Topic 題目不限，好玩就好。歡迎加入我們的 KaLUG 星球！",
+  "category": "community",
+  "countrycode": "tw",
+  "city": "Kaohsiung",
+  "homepage": "https://kalug.linux.org.tw/",
+  "keywords": [
+    "linux",
+    "open source"
+  ],
+  "registration": {
+    "type": "kktix",
+    "url": "https://kalug.kktix.cc/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kalug"
+  },
+  "chat": [
+    {
+      "type": "telegram",
+      "urls": [
+        "https://kalug.linux.org.tw/telegram"
+      ]
+    }
+  ],
+  "social-media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/kalug.tw/",
+        "https://www.facebook.com/groups/kalug.tw/"
+      ]
+    }
+  ],
+  "color": "#337ab7",
+  "logoURL": "https://kalug.linux.org.tw/img/kalug.png"
+}
