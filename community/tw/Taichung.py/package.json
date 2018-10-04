@@ -1,0 +1,24 @@
+{
+  "name": "Taichung.py",
+  "title": "Taichung.py",
+  "description": "我們是一群台中 Python 程式語言的愛好者，希望在台中可以跟 Python 同好分享 Python 有關的訊息或活動，以及相關的技術或知識。",
+  "category": "community",
+  "countrycode": "tw",
+  "city": "Taichung",
+  "keywords": [
+    "python",
+    "programming"
+  ],
+  "registration": {
+    "type": "kktix",
+    "url": "https://taichung-py.kktix.cc/"
+  },
+  "social-media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/groups/780250978715991/"
+      ]
+    }
+  ]
+}
