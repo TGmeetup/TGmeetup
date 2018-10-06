@@ -35,7 +35,7 @@ class KKTIX():
                         "local_time": event["published"].split("T")[1].split(".")[0],
                         "location": event["content"].split("：")[2],
                         "local_city": data["city"],
-                        "geocodeFromGroup": "true",
+                        "geocodeFromGroup": "false",
                         "geocode": {
                             "lat": g.latitude,
                             "lng": g.longitude
