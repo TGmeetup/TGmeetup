@@ -37,7 +37,7 @@ There are lots of technical communities all over the world, but the following pr
     1. It's hard to prevent from clashing with other communities meetups.
     2. Hope to know other communities' which are in the similar field topic.
 
-If there were a platform collecting those informationm, people can save a lot of time.
+If there were a platform collecting those information, people can save a lot of time.
 Thus, TGmeetup project collects the communities' and activities' information thru the registration platform's API, and make it much easier to search for the information which hit the spot. Besides, the package.json files describing the public communities are good for maintaining.
 
 ## Install
