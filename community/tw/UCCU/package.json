@@ -1,0 +1,27 @@
+{
+  "name": "UCCU",
+  "title": "UCCU Hacker",
+  "description": "以中南部為主的資安討論社群與 CTF 戰隊，主旨促進中南部資訊安全技術交流，定期舉辦技術交流聚會。",
+  "category": "community",
+  "countrycode": "tw",
+  "city": "Kaohsiung",
+  "homepage": "https://www.facebook.com/UCCU.Hacker/",
+  "contact": "uccuhacker@gmail.com",
+  "keywords": [
+    "security",
+    "CTF"
+  ],
+  "registration": {
+    "type": "kktix",
+    "url": "https://uccu.kktix.cc/"
+  },
+  "social-media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/UCCU.Hacker/"
+      ]
+    }
+  ],
+  "logoURL": "https://t.kfs.io/upload_images/78050/UCCU_promote.jpg"
+}
