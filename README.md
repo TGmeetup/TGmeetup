@@ -29,15 +29,15 @@ This is a collection set of technical groups' meetup. Collect the technical meet
 
 ## Background
 There are lots of technical communities all over the world, but the following problems come with that.
-- For attendents
+- For attendants
     1. Have no idea to find communities' info.
-    2. Desire to attend communities, but don't know the neighbouring communities which they may attend and the information and culture of the communities.
+    2. The desire to attend communities, but don't know the neighbouring communities which they may attend and the information and culture of the communities.
     3. Would like to know the upcoming meetups around them, instead of searching in known communities.
 - For maintainers
     1. It's hard to prevent from clashing with other communities meetups.
     2. Hope to know other communities' which are in the similar field topic.
 
-If there were a platform collecting those information, people can save a lot of time.
+If there were a platform collecting that information, people can save a lot of time.
 Thus, TGmeetup project collects the communities' and activities' information thru the registration platform's API, and make it much easier to search for the information which hit the spot. Besides, the package.json files describing the public communities are good for maintaining.
 
 ## Install
@@ -63,7 +63,7 @@ optional arguments:
   -h, --help            show this help message and exit
   -u, --update          Update the events.json infomation.
   -c COUNTRY, --country COUNTRY
-                        This is a country code which follow ISO 3166-1
+                        This is a country code which follows ISO 3166-1
                         alpha-2.
   -t CITY, --city CITY  This is a city name.
   -n NAME, --name NAME  This is a community short name.
