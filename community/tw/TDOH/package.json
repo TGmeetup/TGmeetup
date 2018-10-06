@@ -1,0 +1,33 @@
+{
+  "name": "TDOH",
+  "title": "TDOHacker",
+  "description": "TDOH 想要培育台灣資安人才，推廣資安，改變印象，舉辦活動，促進交流，深入校園，協助傳承",
+  "category": "community",
+  "countrycode": "tw",
+  "city": "Taipei",
+  "homepage": "http://tdoh.logdown.com/",
+  "contact": "tdoh-admin@googlegroups.com",
+  "keywords": [
+    "Hacker",
+    "Security",
+    "Education"
+  ],
+  "registration": {
+    "type": "kktix",
+    "url": "https://tdohackerparty.kktix.cc/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tdoh"
+  },
+  "social-media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/tdohacker/",
+        "https://www.facebook.com/groups/TDOHacker/"
+      ]
+    }
+  ],
+  "logoURL": "https://avatars2.githubusercontent.com/u/15310147?s=200&v=4"
+}
