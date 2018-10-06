@@ -100,9 +100,9 @@ Please read [package.json.sample](documents/package.json.sample) which is a samp
       - `contributors`: A non-necessary object. It's a string. It's the information of the group organizer.
       - `repository`: A non-necessary object. It's a dictionary. Specify the place where your code lives. This is helpful for people who want to contribute. The URL should be a publicly available url that can be handed directly to a VCS program without any modification. 
       - `chat`: A non-necessary object. It's a list. This is a chatroom platform of the technical group.
-      - `social-media`: A non-necessary object. It's a list. Put the social media link in it.
+      - `social_media`: A non-necessary object. It's a list. Put the social media link in it.
       - `color`: A non-necessary object. It's a string. Put the Hex color code in it.
-      - `logoURL`: A non-necessary object. It's a string. Put the logo URL in it.
+      - `logo_url`: A non-necessary object. It's a string. Put the logo URL in it.
 5. After finish it, please save the file. According to the contribution process of GitHub Flow. Please follow the commit message as the following.
 Note 1: Please remove `<>` when you edit the commit message.
 Note 2: `<group type>` = `community` or `conference`
