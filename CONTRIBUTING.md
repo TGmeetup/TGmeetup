@@ -49,7 +49,7 @@ Example:
 
 > Short and descriptive example bug report title
 >
-> A summary of the issue and the browser/OS environment in which it occurs. Ifsuitable, include the steps required to reproduce the bug.
+> A summary of the issue and the browser/OS environment in which it occurs. If suitable, include the steps required to reproduce the bug.
 >
 > 1. The first step
 > 2. The second step
