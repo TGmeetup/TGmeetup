@@ -1,0 +1,32 @@
+{
+  "name": "ReactMaker",
+  "title": "ReactMaker",
+  "description": "About community information",
+  "category": "community",
+  "countrycode": "tw",
+  "city": "Kaohsiung",
+  "homepage": "https://reactmaker.github.io/official_web/#/",
+  "keywords": [
+    "react",
+    "programming",
+    "javascript"
+  ],
+  "registration": {
+    "type": "kktix",
+    "url": "https://reactmaker9527.kktix.cc/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ReactMaker"
+  },
+  "social-media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/ReactMaker/"
+      ]
+    }
+  ],
+  "color": "#66d9ef",
+  "logoURL": "https://avatars0.githubusercontent.com/u/28503270?s=200&v=4"
+}
