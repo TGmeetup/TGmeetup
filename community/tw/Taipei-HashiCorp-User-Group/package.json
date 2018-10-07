@@ -13,6 +13,10 @@
     "type": "meetup",
     "url": "https://www.meetup.com/Taipei-HashiCorp-User-Group/"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Taipei-HUG"
+  },
   "social-media": [
     {
       "type": "facebook",
