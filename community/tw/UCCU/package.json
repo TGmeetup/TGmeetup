@@ -15,7 +15,7 @@
     "type": "kktix",
     "url": "https://uccu.kktix.cc/"
   },
-  "social-media": [
+  "social_media": [
     {
       "type": "facebook",
       "urls": [
@@ -23,5 +23,5 @@
       ]
     }
   ],
-  "logoURL": "https://t.kfs.io/upload_images/78050/UCCU_promote.jpg"
+  "logo_url": "https://t.kfs.io/upload_images/78050/UCCU_promote.jpg"
 }

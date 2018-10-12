@@ -13,7 +13,7 @@
     "type": "kktix",
     "url": "https://taichung-py.kktix.cc/"
   },
-  "social-media": [
+  "social_media": [
     {
       "type": "facebook",
       "urls": [

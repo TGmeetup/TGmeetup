@@ -21,7 +21,7 @@
       ]
     }
   ],
-  "social-media": [
+  "social_media": [
     {
       "type": "facebook",
       "urls": [
@@ -31,5 +31,5 @@
     }
   ],
   "color": "#4f67a1",
-  "logoURL": "https://t.kfs.io/upload_images/65064/DevOpsTW_logo_blue2_promote.png"
+  "logo_url": "https://t.kfs.io/upload_images/65064/DevOpsTW_logo_blue2_promote.png"
 }

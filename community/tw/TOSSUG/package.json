@@ -39,7 +39,7 @@
       ]
     }
   ],
-  "social-media": [
+  "social_media": [
     {
       "type": "facebook",
       "urls": [
@@ -53,5 +53,5 @@
       ]
     }
   ],
-  "logoURL": "https://tossug.net/tossug.png"
+  "logo_url": "https://tossug.net/tossug.png"
 }

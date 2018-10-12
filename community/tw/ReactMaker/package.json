@@ -19,7 +19,7 @@
     "type": "git",
     "url": "https://github.com/ReactMaker"
   },
-  "social-media": [
+  "social_media": [
     {
       "type": "facebook",
       "urls": [
@@ -28,5 +28,5 @@
     }
   ],
   "color": "#66d9ef",
-  "logoURL": "https://avatars0.githubusercontent.com/u/28503270?s=200&v=4"
+  "logo_url": "https://avatars0.githubusercontent.com/u/28503270?s=200&v=4"
 }

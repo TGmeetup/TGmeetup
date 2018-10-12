@@ -82,7 +82,7 @@ Please read [package.json.sample](documents/package.json.sample) which is a samp
 3. Create a new file which under this folder and name it as package.json.
 4. Edit package.json. Please read [package.json.sample](documents/package.json.sample) and follow the Json format.
    - Required fields: `name`, `title`, `countrycode`, `city`, `keywords`, `registration`
-   - Non-Required fields, but can enrich information of technical group: `description`, `homepage`, `contact`, `contributors`, `repository`, `chat`, `social-media`
+   - Non-Required fields, but can enrich information of technical group: `description`, `homepage`, `contact`, `contributors`, `repository`, `chat`, `social_media`
    - These are keys introduction:
       - `name`: A necessary object. It's a string. This value should be the same as the folder name, also should be an English word. Using the abbreviation of the technical group or the registration URL of the group is a suggestion.
       - `title`: A necessary object. It's a string. Put the whole name of the technical group.
