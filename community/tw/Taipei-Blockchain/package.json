@@ -1,0 +1,27 @@
+{
+  "name": "Taipei-Blockchain",
+  "title": "台北區塊鏈社群 | Taipei Blockchain Meetup",
+  "description": "台北區塊鏈社群期待打造一個友善利他的區塊鏈社群。一起交流區塊鏈知識，探索去中心化應用開發，智能合約設計，應用案例與UI/UX等領域。",
+  "category": "community",
+  "countrycode": "tw",
+  "city": "Taipei",
+  "homepage": "https://www.meetup.com/Taipei-Blockchain/",
+  "keywords": [
+    "blockchain",
+    "cryptocurrency"
+  ],
+  "contributors": "Jason Chen",
+  "registration": {
+    "type": "meetup",
+    "url": "https://www.meetup.com/Taipei-Blockchain/"
+  },
+  "social_media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/groups/TaipeiBlockchain/"
+      ]
+    }
+  ],
+  "logo_url": "https://secure.meetupstatic.com/photos/event/9/9/a/5/600_473979333.jpeg"
+}
