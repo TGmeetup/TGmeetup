@@ -19,7 +19,7 @@
     "type": "git",
     "url": "https://github.com/gcpug-tw"
   },
-  "social-media": [
+  "social_media": [
     {
       "type": "facebook",
       "urls": [
@@ -40,5 +40,5 @@
     }
   ],
   "color": "#d34836",
-  "logoURL": "https://t.kfs.io/upload_images/39944/GCPUG-2_promote.png"
+  "logo_url": "https://t.kfs.io/upload_images/39944/GCPUG-2_promote.png"
 }

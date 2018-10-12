@@ -24,7 +24,7 @@
       ]
     }
   ],
-  "social-media": [
+  "social_media": [
     {
       "type": "facebook",
       "urls": [
@@ -45,5 +45,5 @@
     }
   ],
   "color": "#211e1e",
-  "logoURL": "https://t.kfs.io/upload_images/34020/hitcon2012-social-logo_512x512_promote.png"
+  "logo_url": "https://t.kfs.io/upload_images/34020/hitcon2012-social-logo_512x512_promote.png"
 }

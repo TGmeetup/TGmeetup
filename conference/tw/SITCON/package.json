@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "social-media": [
+  "social_media": [
     {
       "type": "facebook",
       "urls": [
@@ -42,5 +42,5 @@
       ]
     }
   ],
-  "logoURL": "https://t.kfs.io/upload_images/31904/SITCON_2014_Avatar_promote.jpg"
+  "logo_url": "https://t.kfs.io/upload_images/31904/SITCON_2014_Avatar_promote.jpg"
 }

@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/Taipei-HUG"
   },
-  "social-media": [
+  "social_media": [
     {
       "type": "facebook",
       "urls": [
@@ -26,5 +26,5 @@
     }
   ],
   "color": "#323232",
-  "logoURL": "https://secure.meetupstatic.com/photos/member/c/d/5/d/member_261712573.jpeg"
+  "logo_url": "https://secure.meetupstatic.com/photos/member/c/d/5/d/member_261712573.jpeg"
 }

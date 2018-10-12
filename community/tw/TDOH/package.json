@@ -20,7 +20,7 @@
     "type": "git",
     "url": "https://github.com/tdoh"
   },
-  "social-media": [
+  "social_media": [
     {
       "type": "facebook",
       "urls": [
@@ -29,5 +29,5 @@
       ]
     }
   ],
-  "logoURL": "https://avatars2.githubusercontent.com/u/15310147?s=200&v=4"
+  "logo_url": "https://avatars2.githubusercontent.com/u/15310147?s=200&v=4"
 }

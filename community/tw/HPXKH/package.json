@@ -21,7 +21,7 @@
     "type": "kktix",
     "url": "https://hpxkh.kktix.cc/"
   },
-  "social-media": [
+  "social_media": [
     {
       "type": "facebook",
       "urls": [
@@ -29,5 +29,5 @@
       ]
     }
   ],
-  "logoURL": "https://t.kfs.io/upload_images/74392/hpx-logo-big_promote.png"
+  "logo_url": "https://t.kfs.io/upload_images/74392/hpx-logo-big_promote.png"
 }

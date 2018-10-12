@@ -126,6 +126,6 @@ class TestObjects:
                 continue
             # social-media
             try:
-                assert isinstance(data["social-media"], list)
+                assert isinstance(data["social_media"], list)
             except BaseException:
                 continue

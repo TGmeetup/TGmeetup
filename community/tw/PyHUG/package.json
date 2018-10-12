@@ -38,7 +38,7 @@
       ]
     }
   ],
-  "social-media": [
+  "social_media": [
     {
       "type": "facebook",
       "urls": [
@@ -52,5 +52,5 @@
       ]
     }
   ],
-  "logoURL": "https://secure.meetupstatic.com/photos/event/e/6/1/5/global_446398901.jpeg"
+  "logo_url": "https://secure.meetupstatic.com/photos/event/e/6/1/5/global_446398901.jpeg"
 }

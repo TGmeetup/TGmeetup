@@ -13,7 +13,7 @@
     "type": "kktix",
     "url": "https://agilecommtw.kktix.cc/"
   },
-  "social-media": [
+  "social_media": [
     {
       "type": "facebook",
       "urls": [
@@ -21,5 +21,5 @@
       ]
     }
   ],
-  "logoURL": "https://t.kfs.io/upload_images/78182/484595_151875608283469_37505673_n_promote.jpg"
+  "logo_url": "https://t.kfs.io/upload_images/78182/484595_151875608283469_37505673_n_promote.jpg"
 }

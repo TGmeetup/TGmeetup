@@ -28,7 +28,7 @@
       ]
     }
   ],
-  "social-media": [
+  "social_media": [
     {
       "type": "facebook or instagram...etc",
       "urls": [
@@ -44,5 +44,5 @@
     }
   ],
   "color": "#000000",
-  "logoURL": "https://www.digitalocean.com/apple-touch-icon.png"
+  "logo_url": "https://www.digitalocean.com/apple-touch-icon.png"
 }
