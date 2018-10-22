@@ -1,0 +1,43 @@
+{
+  "name": "TWuseR",
+  "title": "Taiwan R User Group | MLDM Monday",
+  "description": "Founded in October 2012, Taiwan R User Group hosts weekly meetups `ML/DM Monday` which covers various topics including machine learning, data mining, deep learning and artificial intelligence, is regarded as the largest data science related community in Taiwan.",
+  "category": "community",
+  "countrycode": "tw",
+  "city": "Taipei",
+  "homepage": "https://www.meetup.com/Taiwan-R/",
+  "contact": "taiwan.user.group@gmail.com",
+  "keywords": [
+    "open-source"
+    "machine-learning",
+    "data-visualization",
+    "data-mining",
+    "deep-learning",
+    "artificial-intelligence"
+  ],
+  "contributors": "Summit Suen <summit.suen@gmail.com> [see more](https://www.meetup.com/Taiwan-R/members/?op=leaders)",
+  "registration": {
+    "type": "meetup",
+    "url": "https://www.meetup.com/Taiwan-R/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TaiwanRUserGroup"
+  },
+  "social_media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "http://www.facebook.com/Tw.R.User"
+      ]
+    },
+    {
+      "type": "youtube",
+      "urls": [
+        "https://www.youtube.com/user/TWuseRGroup"
+      ]
+    }
+  ],
+  "color": "#2982ce",
+  "logo_url": "https://avatars3.githubusercontent.com/u/8215127?s=400&u=4aeeea650dd24788f6fca7f1fd2a6690a34d4d31&"
+}
