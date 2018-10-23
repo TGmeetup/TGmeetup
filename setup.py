@@ -10,7 +10,7 @@ entry_points = {
 setup(
   name='tgmeetup',
   packages=['TGmeetup', 'TGmeetup.libs', 'TGmeetup.libs.RegistrationAPI'],
-  version='0.2.0',
+  version='0.2.1',
   description='A collection set of technical groups information',
   author='Samina Fu',
   author_email='sufuf3@gmail.com',
