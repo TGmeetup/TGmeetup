@@ -1,0 +1,49 @@
+{
+  "name": "CCNS",
+  "title": "Campus Computer ＆ Network Society",
+  "description": "CCNS電腦網路愛好社是為於台南成功大學內的學生社團，同時也是台南的開源人社群之一。",
+  "category": "community",
+  "countrycode": "tw",
+  "city": "Tainan",
+  "homepage": "https://web.ccns.ncku.edu.tw/",
+  "contact": "ccns@ccns.cc",
+  "keywords": [
+    "CCNS",
+    "NCKU",
+    "tainan",
+    "open-source"
+  ],
+  "contributors": "Daniel Chen <daniel@ccns.cc>",
+  "registration": {
+    "type": "kktix",
+    "url": "https://ccns.kktix.cc/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CCNS"
+  },
+  "chat": [
+    {
+      "type": "telegram",
+      "urls": [
+        "https://telegram.me/CCNSgeneral"
+      ]
+    },
+    {
+      "type": "discord",
+      "urls": [
+        "https://discord.gg/ktSHKSq"
+      ]
+    }
+  ],
+  "social_media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/ncku.ccns/",
+        "https://www.facebook.com/groups/ncku.ccns/"
+      ]
+    }
+  ],
+  "logo_url": "https://avatars3.githubusercontent.com/u/7893404?s=200&v=4"
+}
