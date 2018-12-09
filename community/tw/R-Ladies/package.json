@@ -1,38 +1,38 @@
 {
-    "name": "R-Ladies",
-    "title": "R-Ladies Taipei",
-    "description": "R-Ladies Taipei 是以女性為優先的 R 語言學習社群。 不同於資訊、技術領域明顯落差的男女比，與男性為多數所形成的文化； 我們期許 R-Ladies Taipei 提供一個以女性為主、開放、自由交流的學習環境，鼓勵女性夥伴們在R語言應用、資料分析相關領域互相幫助，一同精進與成長。",
-    "category": "community",
-    "countrycode": "tw",
-    "city": "Taipei",
-    "homepage": "https://rladiestaipei.github.io/R-Ladies-Taipei/",
-    "keywords": [
-        "open-source",
-        "data-science",
-        "data-visualization",
-        "data-mining",
-        "machine-learning",
-        "deep-learning",
-        "artificial-intelligence",
-        "statistical-modeling",
-        "statistical-computing"
-    ],
-    "contributors": "Mia Chang <mia5419@gmail.com> [see more](https://www.meetup.com/R-Ladies-Taipei/members/?op=leaders)",
-    "registration": {
-        "type": "meetup",
-        "url": "https://www.meetup.com/R-Ladies-Taipei/"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/rladiestaipei"
-    },
-    "social_media": [
-        {
-            "type": "facebook",
-            "urls": [
-                "https://www.facebook.com/groups/RLadiesTaipei/"
-            ]
-        }
-    ],
-    "logo_url": "https://rladiestaipei.github.io/R-Ladies-Taipei/img/profile.png"
+  "name": "R-Ladies",
+  "title": "R-Ladies Taipei",
+  "description": "R-Ladies Taipei 是以女性為優先的 R 語言學習社群。 不同於資訊、技術領域明顯落差的男女比，與男性為多數所形成的文化； 我們期許 R-Ladies Taipei 提供一個以女性為主、開放、自由交流的學習環境，鼓勵女性夥伴們在R語言應用、資料分析相關領域互相幫助，一同精進與成長。",
+  "category": "community",
+  "countrycode": "tw",
+  "city": "Taipei",
+  "homepage": "https://rladiestaipei.github.io/R-Ladies-Taipei/",
+  "keywords": [
+    "open-source",
+    "data-science",
+    "data-visualization",
+    "data-mining",
+    "machine-learning",
+    "deep-learning",
+    "artificial-intelligence",
+    "statistical-modeling",
+    "statistical-computing"
+  ],
+  "contributors": "Mia Chang <mia5419@gmail.com> [see more](https://www.meetup.com/R-Ladies-Taipei/members/?op=leaders)",
+  "registration": {
+    "type": "meetup",
+    "url": "https://www.meetup.com/R-Ladies-Taipei/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rladiestaipei"
+  },
+  "social_media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/groups/RLadiesTaipei/"
+      ]
+    }
+  ],
+  "logo_url": "https://rladiestaipei.github.io/R-Ladies-Taipei/img/profile.png"
 }
