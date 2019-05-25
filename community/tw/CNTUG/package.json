@@ -12,8 +12,8 @@
     "container"
   ],
   "registration": {
-    "type": "kktix",
-    "url": "https://cntug.kktix.cc/"
+    "type": "meetup",
+    "url": "https://www.meetup.com/CloudNative-Taiwan/"
   },
   "chat": [
     {

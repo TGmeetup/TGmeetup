@@ -9,8 +9,8 @@
     - DevOps  
     - container  
 - registration:  
-    type: kktix  
-    url: 'https://cntug.kktix.cc/'  
+    type: meetup  
+    url: 'https://www.meetup.com/CloudNative-Taiwan'  
 - chat:  
     - {type: telegram, urls: ['https://t.me/CNTUG']}
 - social-media:  
