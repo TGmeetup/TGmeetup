@@ -25,4 +25,6 @@ cp -r community ~/.config/TGmeetup
 cp -r conference ~/.config/TGmeetup
 
 # Install tgmeetup
-sudo python setup.py install
+pip3 install configparser
+sudo python3 setup.py install
+pip3 install geopy
