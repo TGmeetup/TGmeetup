@@ -1,7 +1,7 @@
 # TGmeetup
 
 [![Build Status](https://api.travis-ci.org/TGmeetup/TGmeetup.svg?branch=master)](https://travis-ci.org/TGmeetup/TGmeetup)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/tgmeetup/5)
+[![Financial Contributors on Open Collective](https://opencollective.com/TGmeetup/all/badge.svg?label=financial+contributors)](https://opencollective.com/TGmeetup) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/tgmeetup/5)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FTGmeetup%2FTGmeetup.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FTGmeetup%2FTGmeetup?ref=badge_shield)
 
 [中文版](documents/README_zh-tw.md)
@@ -102,6 +102,36 @@ To submit PRs to TGmeetup, please refer to [CONTRIBUTING.md](CONTRIBUTING.md). I
 - [TGmeetup website](https://tgmeetup.github.io/)
 - [Community/Developer Telegram Group](https://t.me/tgmeetup)
 - [HelloGitHub vol‧29](https://hellogithub.com/periodical/volume/29/#TGmeetup)
+
+## Contributors
+
+### Code Contributors
+
+This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+<a href="https://github.com/TGmeetup/TGmeetup/graphs/contributors"><img src="https://opencollective.com/TGmeetup/contributors.svg?width=890&button=false" /></a>
+
+### Financial Contributors
+
+Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/TGmeetup/contribute)]
+
+#### Individuals
+
+<a href="https://opencollective.com/TGmeetup"><img src="https://opencollective.com/TGmeetup/individuals.svg?width=890"></a>
+
+#### Organizations
+
+Support this project with your organization. Your logo will show up here with a link to your website. [[Contribute](https://opencollective.com/TGmeetup/contribute)]
+
+<a href="https://opencollective.com/TGmeetup/organization/0/website"><img src="https://opencollective.com/TGmeetup/organization/0/avatar.svg"></a>
+<a href="https://opencollective.com/TGmeetup/organization/1/website"><img src="https://opencollective.com/TGmeetup/organization/1/avatar.svg"></a>
+<a href="https://opencollective.com/TGmeetup/organization/2/website"><img src="https://opencollective.com/TGmeetup/organization/2/avatar.svg"></a>
+<a href="https://opencollective.com/TGmeetup/organization/3/website"><img src="https://opencollective.com/TGmeetup/organization/3/avatar.svg"></a>
+<a href="https://opencollective.com/TGmeetup/organization/4/website"><img src="https://opencollective.com/TGmeetup/organization/4/avatar.svg"></a>
+<a href="https://opencollective.com/TGmeetup/organization/5/website"><img src="https://opencollective.com/TGmeetup/organization/5/avatar.svg"></a>
+<a href="https://opencollective.com/TGmeetup/organization/6/website"><img src="https://opencollective.com/TGmeetup/organization/6/avatar.svg"></a>
+<a href="https://opencollective.com/TGmeetup/organization/7/website"><img src="https://opencollective.com/TGmeetup/organization/7/avatar.svg"></a>
+<a href="https://opencollective.com/TGmeetup/organization/8/website"><img src="https://opencollective.com/TGmeetup/organization/8/avatar.svg"></a>
+<a href="https://opencollective.com/TGmeetup/organization/9/website"><img src="https://opencollective.com/TGmeetup/organization/9/avatar.svg"></a>
 
 ## License
 MIT
