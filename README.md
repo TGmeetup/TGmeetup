@@ -138,3 +138,5 @@ MIT
 
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FTGmeetup%2FTGmeetup.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FTGmeetup%2FTGmeetup?ref=badge_large)
+
+[![DeepSource](https://static.deepsource.io/deepsource-badge-light.svg)](https://deepsource.io/gh/TGmeetup/TGmeetup/?ref=repository-badge)
