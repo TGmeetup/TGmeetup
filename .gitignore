@@ -102,4 +102,7 @@ venv3/
 # Config File
 API.cfg
 
+# files created by development environments
+.DS_Store
+
 # End of https://www.gitignore.io/api/python

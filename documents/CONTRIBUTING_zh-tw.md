@@ -77,7 +77,7 @@ Bug 回報指南：
 ### Add a community
 
 請參閱 [package.json.sample](package.json.sample)，這是一份 package.json 範例檔。要加入技術社群資訊，請依據以下順序進行。  
-(再進行之前，請搜尋是否有存在的 pull request ，以及是否有相關的 issue，依據尊重原則，我們會保留先送 pull request 的貢獻者，若是後面有重複的 pull request，我們只能非常抱歉的請您關閉該重複的 pull request。若發現原貢獻者遲遲為修改該 pull request，還請您在該 pull request 留言詢問，倘若太久，我們也可以討論是否關閉原 pull request ，讓您重新送一個 pull request 進行貢獻，謝謝。)  
+(再進行之前，請搜尋是否有存在的 pull request ，以及是否有相關的 issue，依據尊重原則，我們會保留先送 pull request 的貢獻者，若是後面有重複的 pull request，我們只能非常抱歉的請您關閉該重複的 pull request。若發現原貢獻者遲遲未修改該 pull request，還請您在該 pull request 留言詢問，倘若太久，我們也可以討論是否關閉原 pull request ，讓您重新送一個 pull request 進行貢獻，謝謝。)  
 1. 找尋 [community](../community) 或 [conference](../conference) 目錄底下目前是否有該技術社群所存在的 country code ？如果有請到該目錄底下，沒有請建立一個新的 country code 資料夾。
 2. 創建一個屬於該社群的目錄名(資料夾名稱)，目錄名應為一個英文單字，建議為該社群的縮寫，或是活動報名 URL 的社群名。
 3. 進到該新建的目錄底下，並且建立一個新的檔案，檔案名為 package.json。
