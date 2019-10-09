@@ -1,0 +1,43 @@
+{
+  "name": "MOLi",
+  "title": "Makers' Open Lab for Innovation",
+  "description": "暨南大學創新自造者開放實驗室。We Make, We Hack, We Share.",
+  "category": "community",
+  "countrycode": "tw",
+  "city": "Nantou",
+  "homepage": "https://moli.rocks/",
+  "keywords": [
+    "NCNU",
+    "MOLi",
+    "MOLiDay",
+    "puli",
+    "237",
+    "maker"
+  ],
+  "registration": {
+    "type": "kktix",
+    "url": "https://moli.kktix.cc/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MOLi-rocks"
+  },
+  "chat": [
+    {
+      "type": "telegram",
+      "urls": [
+        "https://telegram.me/MOLi_rocks"
+      ]
+    }
+  ],
+  "social_media": [
+    {
+      "type": "facebook",
+      "urls": [
+        "https://www.facebook.com/MOLi.rocks",
+        "https://www.facebook.com/groups/MOLi.rocks/"
+      ]
+    }
+  ],
+  "logo_url": "MOLi_logo.png"
+}
